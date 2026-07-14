@@ -1,0 +1,206 @@
+{
+    "sourceFile": "gemini_code_1784015100312-1784018491639-842566712.txt",
+    "analyzedAt": "2026-07-14T08:41:57.713Z",
+    "questions": [
+        {
+            "question": "Mục tiêu chính của tài liệu Kiến trúc hệ thống là gì?",
+            "options": [
+                "Lên kế hoạch marketing",
+                "Đồng bộ hóa thông tin giữa các bên trước khi viết code",
+                "Hướng dẫn sử dụng phần mềm",
+                "Báo cáo tài chính dự án"
+            ],
+            "answer": "Đồng bộ hóa thông tin giữa các bên trước khi viết code"
+        },
+        {
+            "question": "Công nghệ nào sau đây KHÔNG được sử dụng cho lớp Giao diện (Frontend)?",
+            "options": [
+                "Next.js",
+                "React JS",
+                "Node.js",
+                "Tailwind CSS"
+            ],
+            "answer": "Node.js"
+        },
+        {
+            "question": "Trong hệ thống, lớp Frontend đảm nhận vai trò gì?",
+            "options": [
+                "Xử lý logic nghiệp vụ",
+                "Quản lý quyền truy cập",
+                "Thiết kế lược đồ dữ liệu",
+                "Xây dựng layout hiển thị và tối ưu hóa SEO"
+            ],
+            "answer": "Xây dựng layout hiển thị và tối ưu hóa SEO"
+        },
+        {
+            "question": "Công nghệ nào được đề xuất sử dụng cho lớp Máy chủ (Backend)?",
+            "options": [
+                "Node.js / PHP",
+                "React JS",
+                "MySQL",
+                "Prisma ORM"
+            ],
+            "answer": "Node.js / PHP"
+        },
+        {
+            "question": "Nhiệm vụ chính của lớp Backend trong dự án này là gì?",
+            "options": [
+                "Tối ưu hóa Server-Side Rendering",
+                "Xử lý logic nghiệp vụ và cung cấp API",
+                "Quản lý schema migration",
+                "Thiết kế giao diện người dùng"
+            ],
+            "answer": "Xử lý logic nghiệp vụ và cung cấp API"
+        },
+        {
+            "question": "Hệ quản trị cơ sở dữ liệu nào được sử dụng để lưu trữ?",
+            "options": [
+                "MongoDB",
+                "PostgreSQL",
+                "MySQL",
+                "SQL Server"
+            ],
+            "answer": "MySQL"
+        },
+        {
+            "question": "Các bảng chính trong cơ sở dữ liệu được chuẩn hóa ở mức nào?",
+            "options": [
+                "1NF",
+                "2NF",
+                "3NF",
+                "BCNF"
+            ],
+            "answer": "3NF"
+        },
+        {
+            "question": "Mục đích của việc chuẩn hóa cơ sở dữ liệu ở mức 3NF là gì?",
+            "options": [
+                "Tăng tốc độ tải trang",
+                "Tránh dư thừa dữ liệu",
+                "Làm đẹp mã nguồn",
+                "Hỗ trợ Server-Side Rendering"
+            ],
+            "answer": "Tránh dư thừa dữ liệu"
+        },
+        {
+            "question": "Công cụ nào đóng vai trò cầu nối giữa mã nguồn ứng dụng và cơ sở dữ liệu MySQL?",
+            "options": [
+                "Tailwind CSS",
+                "Next.js",
+                "Prisma ORM",
+                "PHP"
+            ],
+            "answer": "Prisma ORM"
+        },
+        {
+            "question": "Một trong những lợi ích của Prisma ORM là giảm thiểu rủi ro lỗi cú pháp SQL nhờ vào điều gì?",
+            "options": [
+                "Type-Safe queries",
+                "Server-Side Rendering",
+                "Bộ lọc động",
+                "RESTful API"
+            ],
+            "answer": "Type-Safe queries"
+        },
+        {
+            "question": "Prisma ORM giúp quản lý điều gì một cách tự động và rõ ràng qua từng phiên bản?",
+            "options": [
+                "Giao diện UI",
+                "Schema migration",
+                "Bảo mật Frontend",
+                "Bộ lọc tìm kiếm"
+            ],
+            "answer": "Schema migration"
+        },
+        {
+            "question": "Sử dụng Prisma ORM giúp tăng tốc độ phát triển cho mô-đun nào?",
+            "options": [
+                "Mô-đun giao diện",
+                "Mô-đun tương tác dữ liệu (CRUD)",
+                "Mô-đun định tuyến (Routing)",
+                "Mô-đun SEO"
+            ],
+            "answer": "Mô-đun tương tác dữ liệu (CRUD)"
+        },
+        {
+            "question": "Khi cần khởi tạo hoặc cập nhật Database, nhà phát triển nên làm gì?",
+            "options": [
+                "Chỉnh sửa cấu trúc bảng trực tiếp trên server",
+                "Sử dụng các tập lệnh migration chuẩn",
+                "Xóa cơ sở dữ liệu và tạo lại",
+                "Thay đổi trực tiếp trên giao diện UI"
+            ],
+            "answer": "Sử dụng các tập lệnh migration chuẩn"
+        },
+        {
+            "question": "Hành động nào KHÔNG được khuyến khích khi cập nhật cơ sở dữ liệu trong dự án này?",
+            "options": [
+                "Sử dụng Prisma ORM",
+                "Chuẩn hóa bảng ở mức 3NF",
+                "Chỉnh sửa cấu trúc bảng trực tiếp trên database server",
+                "Dùng tập lệnh migration chuẩn"
+            ],
+            "answer": "Chỉnh sửa cấu trúc bảng trực tiếp trên database server"
+        },
+        {
+            "question": "Cấu trúc hệ thống cơ sở dữ liệu được thiết kế nhằm tối ưu hóa đặc biệt cho chức năng nào?",
+            "options": [
+                "Bảng biểu, bộ lọc động và xuất báo cáo",
+                "Chơi game trực tuyến",
+                "Xử lý hình ảnh 3D",
+                "Gửi email tự động"
+            ],
+            "answer": "Bảng biểu, bộ lọc động và xuất báo cáo"
+        },
+        {
+            "question": "Tài liệu này thuộc loại tài liệu nào?",
+            "options": [
+                "Hướng dẫn sử dụng",
+                "Hợp đồng kinh tế",
+                "Tài liệu Nội bộ",
+                "Thông cáo báo chí"
+            ],
+            "answer": "Tài liệu Nội bộ"
+        },
+        {
+            "question": "Từ viết tắt SSR trong phần mô tả Frontend có nghĩa là gì?",
+            "options": [
+                "Solid State Rendering",
+                "Secure Socket Request",
+                "Server-Side Rendering",
+                "System Security Rules"
+            ],
+            "answer": "Server-Side Rendering"
+        },
+        {
+            "question": "Cấu trúc kiến trúc phần mềm trong tài liệu giúp hệ thống đảm bảo điều gì trong tương lai?",
+            "options": [
+                "Tính mở rộng, hiệu suất cao và khả năng bảo trì",
+                "Không bao giờ phát sinh lỗi",
+                "Chạy được trên mọi hệ điều hành cũ",
+                "Giảm 100% chi phí server"
+            ],
+            "answer": "Tính mở rộng, hiệu suất cao và khả năng bảo trì"
+        },
+        {
+            "question": "Phân lớp nào đảm bảo tính toàn vẹn dữ liệu và hỗ trợ truy vấn phức tạp an toàn?",
+            "options": [
+                "Next.js",
+                "Lưu trữ (Database)",
+                "Giao diện (Frontend)",
+                "Máy chủ (Backend)"
+            ],
+            "answer": "Lưu trữ (Database)"
+        },
+        {
+            "question": "Theo tài liệu, đâu là công nghệ thuộc nhóm Frontend giúp xây dựng giao diện hiển thị?",
+            "options": [
+                "Node.js",
+                "MySQL",
+                "Prisma",
+                "Tailwind CSS"
+            ],
+            "answer": "Tailwind CSS"
+        }
+    ]
+}

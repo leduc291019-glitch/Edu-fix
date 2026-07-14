@@ -1,0 +1,116 @@
+public class viDu{
+       setBaoMat EpKieu TenBien;
+       Private String ten;
+       Private Double so;
+tính kế thừa : lớp con sẽ kế thừa 1 hay nhiều thuộc tính của lớp cha
+
+extends - từ khóa để kế thừa trong java 
+ý nghĩa của việc kế thừa : để liên kết thuộc tính của lớp con với 
+lớp cha. Làm cho chương trình chặt chẽ hơn.
+
+phương thức ghi đè là gì ?
+override 
+1 lớp con cung cấp 1 phương thức hay công thức đã được định nghĩa ở lớp cha 
+
+
+public class sach{
+#khai báo biến
+       Private String maSach;
+       Private String tenSach;
+       Private double giaSach;
+       #tạo constructor 
+       public Sach(String maSach,String tenSach,double giaSach){
+             this.maSach= maSach;
+             this.tenSach=tenSach;
+             this.giaSach=giaSach;
+             }
+       #định nghĩa phương thức trườu tượng
+       public double thanhTien(){
+              return this.thanhTien;
+             }
+       #tạo getter,setter 
+       public String getMaSach(){
+              return maSach;
+              }
+       public void setMaSach( String maSach){
+              return this.maSach;
+              }
+       public String getTenSach(){
+              return tenSach;
+              }
+       public void setMaSach( String tenSach){
+              return this.tenSach;
+              }
+       public double getGiaSach(){
+              return giaSach;
+              }
+       public void setGiaSach( double giaSach){
+              return this.giaSach;
+              }
+       public void hienThi(){
+              System.out.println("mã sách" + this.maSach);
+              System.out.println("tên sách" + this.tenSach);
+              System.out.println("giá sách" + this.giaSach);
+              }
+}
+
+
+public class SachGiaoKhoa extends Sach {
+       private int soLuong;
+       public SachGiaoKhoa(String maSach,String tenSach,double giaSach,int soLuong){
+       super(maSach,tenSach,giaSach)
+       this.soLuong=soLuong;
+       }
+       @override
+       public void thanhTien(){
+             return this.giaSach * this.soLuong;
+       }
+       public int getsoLuong(){
+             return soLuong;
+       }
+	public void setSoLuong(int soLuong){
+		return this.soLuong;
+	}
+}
+
+
+
+public class SachThamKhao extends Sach{
+	Private double thue;
+	public SachThamKhao(String maSach,String tenSach,double giaSach,double thue){
+		super(maSach,tenSach,giaSach);
+		this.thue=thue;
+	}
+	@override
+	public void thanhTien(){
+		return (this.giasach +(this.giaSach*this.thue/100))*this.soLuong
+		}
+	public int getThue(){
+		return thue;
+	}
+	public void setThue(int thue){
+		return this.thue;
+	}
+}
+
+import.java.util.ArrayList
+public class main{
+	public static void main(String[]args){
+		SachGiaoKhoa s1 = new SachGiaoKhoa("123","doremon",15000);
+		SachGiaoKhoa s2 = new SachGiaoKhoa("345","conan",20000);
+		ArrayList<SachGiaoKhoa> sachGiaoKhoa = new ArrayList<>();
+		sachGiaoKhoa.add(s1);
+		sachGiaoKhoa.add(s2);
+		for(SachGiaoKhoa:sachGiaoKhoa){
+			SachGiaoKhoa.thanhTien()
+		}
+		SachThamKhao s1 = new SachThamKhao("123","doremon",15000);
+		SachThamKhao s2 = new SachThamKhao("123","doremon",15000);
+		ArrayList<SachThamKhao>stk=new ArrayList<>();
+		stk.add(s1);
+		stk.add(s2);
+		for(SachThamKhao:stk){
+			SachThamKhao.thanhTien()
+		}
+}
+	

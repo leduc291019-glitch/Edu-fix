@@ -1,0 +1,89 @@
+LÀM QUEN VỚI VÒNG LẶP "FOR" TRONG PYTHON
+Mục tiêu bài học:
+Học sinh hiểu được vòng lặp là gì thông qua các hình ảnh thực tế.
+Biết cách sử dụng vòng lặp for kết hợp với hàm range() để lặp lại một hành động với số lần biết trước.
+Áp dụng được vào các bài toán đếm số và vẽ hình đơn giản.
+1. Khái niệm: Vòng lặp For là gì?
+Trong cuộc sống hàng ngày, có rất nhiều hành động được lặp đi lặp lại. Ví dụ:
+Em tập thể dục và nhảy bật nhảy 10 lần.
+Thầy cô phát phiếu bài tập cho từng bạn một trong lớp, từ bạn đầu bàn đến bạn cuối bàn.
+Kim giây của đồng hồ chạy hết 60 tích tắc thì được một phút.
+Thay vì bắt em ngồi gõ đi gõ lại một câu lệnh 10 lần hay 100 lần (rất mỏi tay và dễ chán), Python cung cấp cho chúng ta một công cụ gọi là Vòng lặp for.
+Định nghĩa đơn giản: Vòng lặp for là câu lệnh giúp máy tính tự động thực hiện lặp đi lặp lại một công việc theo một số lần mà em mong muốn.
+2. Cú pháp: Cách ra lệnh cho "Robot" lặp lại
+Để dùng vòng lặp for đếm số lần, chúng ta thường kết hợp với một "cỗ máy đếm số" tên là range().
+Cấu trúc cơ bản:
+for i in range(so_lan):
+    # Các câu lệnh muốn lặp lại viết ở đây
+    # Chú ý: Phải thụt lề (nhấn phím Tab) cho các lệnh ở trong vòng lặp!
+
+
+for và in: Từ khóa bắt buộc của Python.
+i: Giống như một ngón tay của em đưa lên để đếm (lần 1, lần 2, lần 3...). Mỗi lần lặp, i sẽ mang một giá trị số mới.
+range(so_lan): Nơi em điền số lần muốn lặp. Lưu ý: Trong Python, range(5) sẽ đếm từ số 0 đến số 4 (đủ 5 lần).
+Ví dụ thực tế: Hãy ra lệnh cho máy tính in ra chữ "Tớ hứa sẽ làm bài tập đầy đủ!" 3 lần.
+for i in range(3):
+    print("Tớ hứa sẽ làm bài tập đầy đủ!")
+
+
+Kết quả màn hình hiển thị:
+Tớ hứa sẽ làm bài tập đầy đủ!
+Tớ hứa sẽ làm bài tập đầy đủ!
+Tớ hứa sẽ làm bài tập đầy đủ!
+
+
+3. Trường hợp sử dụng: Khi nào thì dùng vòng lặp For?
+Em sẽ dùng vòng lặp for khi:
+Đã biết trước số lần lặp: Ví dụ như vẽ một hình vuông (cần vẽ 4 cạnh), in ra các số từ 1 đến 100, hoặc tạo hiệu ứng nhấp nháy đèn 5 lần.
+Muốn kiểm tra từng thứ trong một danh sách: Ví dụ như đi qua từng tên học sinh trong danh sách lớp để điểm danh.
+4. Bài tập ứng dụng
+Bài tập 1: Đếm sao đêm
+Yêu cầu: Em hãy viết chương trình sử dụng vòng lặp for để in ra biểu tượng ngôi sao * đúng 5 lần, mỗi ngôi sao nằm trên một dòng riêng biệt.
+Gợi ý đáp án:
+for i in range(5):
+    print("*")
+
+
+Bài tập 2: Robot tập đếm số
+Kiến thức mới: Biến i trong vòng lặp sẽ thay đổi từ 0 tăng dần lên. Nếu muốn Robot đếm từ 1 đến 5, chúng ta có thể in giá trị i + 1.
+Yêu cầu: Hãy viết chương trình để Robot in ra các số từ 1 đến 5 theo thứ tự tăng dần.
+Code mẫu để học sinh hoàn thành:
+for i in range(5):
+    # Hãy điền lệnh print() vào đây để in ra các số từ 1 đến 5
+    print(....)
+
+
+Gợi ý đáp án:
+for i in range(5):
+    print(i + 1)
+    
+# Cách 2 nâng cao hơn: range(1, 6) nghĩa là chạy từ 1 và dừng trước 6
+# for i in range(1, 6):
+#     print(i)
+
+
+Bài tập 3: Cỗ máy cổ vũ bóng đá
+Yêu cầu: Sắp đến trận chung kết bóng đá của trường, em hãy viết một hàm tên là co_vu(ten_doi). Hàm này sẽ nhận vào tên của đội bóng và sử dụng vòng lặp for để in ra lời cổ vũ đội đó 3 lần.
+Ví dụ khi chạy: co_vu("Lớp 6A")
+Kết quả mong đợi:
+Lớp 6A vô địch! Cố lên!
+Lớp 6A vô địch! Cố lên!
+Lớp 6A vô địch! Cố lên!
+
+
+Gợi ý đáp án:
+def co_vu(ten_doi):
+    for i in range(3):
+        print(ten_doi + " vô địch! Cố lên!")
+
+# Chạy thử hàm
+co_vu("Lớp 6A")
+
+
+
+nhập số nguyên n và in ra bảng cửu chương từ 1 đến 10 của số đó .
+nhập số nguyên n, in ra hình vuông cạnh n
+****
+****
+****
+****

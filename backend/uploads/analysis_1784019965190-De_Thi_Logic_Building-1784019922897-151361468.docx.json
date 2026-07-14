@@ -1,0 +1,206 @@
+{
+    "sourceFile": "De_Thi_Logic_Building-1784019922897-151361468.docx",
+    "analyzedAt": "2026-07-14T09:06:05.190Z",
+    "questions": [
+        {
+            "question": "Trong việc ra quyết định, hành động “Nếu trời mưa thì mang ô, ngược lại thì đội mũ” tương ứng với cấu trúc nào?",
+            "options": [
+                "Vòng lặp (Loop)",
+                "Điều kiện (If-Else)",
+                "Khai báo biến (Variable)",
+                "Hàm (Function)"
+            ],
+            "answer": "Điều kiện (If-Else)"
+        },
+        {
+            "question": "“Bảng cửu chương” được lưu trữ trong bộ não giống nhất với thành phần nào?",
+            "options": [
+                "Màn hình (Monitor)",
+                "Dây cáp mạng (Internet)",
+                "Cơ sở dữ liệu (Database)",
+                "Bàn phím (Keyboard)"
+            ],
+            "answer": "Cơ sở dữ liệu (Database)"
+        },
+        {
+            "question": "Hành động “Đánh răng mỗi sáng” giống nhất với khái niệm nào?",
+            "options": [
+                "Vòng lặp (Loop)",
+                "Biến số (Variable)",
+                "Lỗi (Bug)",
+                "Giao diện (Frontend)"
+            ],
+            "answer": "Vòng lặp (Loop)"
+        },
+        {
+            "question": "Một “Công thức nấu ăn” có sẵn tương đương với khái niệm nào?",
+            "options": [
+                "Phần cứng (Hardware)",
+                "Thuật toán (Algorithm)",
+                "Dữ liệu (Data)",
+                "Cổng API"
+            ],
+            "answer": "Thuật toán (Algorithm)"
+        },
+        {
+            "question": "Dữ liệu bạn đang suy nghĩ để giải toán tức thời nằm ở đâu?",
+            "options": [
+                "Trí nhớ ngắn hạn (RAM)",
+                "Ổ cứng (Hard Drive)",
+                "Thùng rác (Recycle Bin)",
+                "Máy in (Printer)"
+            ],
+            "answer": "Trí nhớ ngắn hạn (RAM)"
+        },
+        {
+            "question": "Việc dùng tiếng Việt với người Việt và tiếng Anh với người Anh giống với thao tác nào?",
+            "options": [
+                "Ghi đè dữ liệu (Overwrite)",
+                "Biên dịch/Thông dịch (Compiler/Interpreter)",
+                "Sao lưu (Backup)",
+                "Nén dữ liệu (Zip)"
+            ],
+            "answer": "Biên dịch/Thông dịch (Compiler/Interpreter)"
+        },
+        {
+            "question": "Nếu trang web là ngôi nhà, bộ khung gạch và cột tương ứng với:",
+            "options": [
+                "CSS",
+                "JavaScript",
+                "HTML",
+                "SQL"
+            ],
+            "answer": "HTML"
+        },
+        {
+            "question": "Khi nói “Để tôi tính lại xem”, con người đang thực hiện thao tác gì?",
+            "options": [
+                "Lưu trữ (Save)",
+                "Xử lý logic (Processing)",
+                "Xóa dữ liệu (Delete)",
+                "Kết nối mạng (Ping)"
+            ],
+            "answer": "Xử lý logic (Processing)"
+        },
+        {
+            "question": "Việc thay đổi đồ vật trong một chiếc hộp (Biến) tương đương với:",
+            "options": [
+                "Gán giá trị (Assignment)",
+                "Xóa chương trình",
+                "Đặt tên hàm",
+                "Chạy vòng lặp"
+            ],
+            "answer": "Gán giá trị (Assignment)"
+        },
+        {
+            "question": "Tại sao lỗi logic nguy hiểm hơn lỗi cú pháp?",
+            "options": [
+                "Vì máy tính sẽ không chạy",
+                "Vì nó làm máy tính bị cháy",
+                "Vì chương trình vẫn chạy nhưng cho kết quả sai",
+                "Vì nó làm giao diện xấu đi"
+            ],
+            "answer": "Vì chương trình vẫn chạy nhưng cho kết quả sai"
+        },
+        {
+            "question": "“Ghi nhật ký hàng ngày” tương đương với thao tác:",
+            "options": [
+                "Xử lý ảnh (Render)",
+                "Ghi tệp nhật ký (Logging)",
+                "Tấn công mạng (Hack)",
+                "Nâng cấp phần cứng"
+            ],
+            "answer": "Ghi tệp nhật ký (Logging)"
+        },
+        {
+            "question": "Thành phần ‘điều phối’ mọi hoạt động máy tính giống ý chí con người là:",
+            "options": [
+                "Hệ điều hành (OS)",
+                "Chuột (Mouse)",
+                "Loa (Speaker)",
+                "Cáp nguồn"
+            ],
+            "answer": "Hệ điều hành (OS)"
+        },
+        {
+            "question": "Vừa nghe nhạc vừa làm toán giống với khái niệm:",
+            "options": [
+                "Đơn nhiệm (Single-tasking)",
+                "Đa nhiệm (Multi-tasking)",
+                "Đứng máy (Crash)",
+                "Tắt máy (Shutdown)"
+            ],
+            "answer": "Đa nhiệm (Multi-tasking)"
+        },
+        {
+            "question": "Việc “Quên” một tên người bạn cũ tương đương với:",
+            "options": [
+                "Copy dữ liệu",
+                "Dữ liệu bị hỏng hoặc bị xóa",
+                "Mã hóa dữ liệu",
+                "Tải dữ liệu (Download)"
+            ],
+            "answer": "Dữ liệu bị hỏng hoặc bị xóa"
+        },
+        {
+            "question": "Dấu ‘=’ trong x = 10 nên được hiểu là:",
+            "options": [
+                "x bằng 10 (So sánh)",
+                "Đặt giá trị 10 vào x (Gán)",
+                "x lớn hơn 10",
+                "Không có ý nghĩa gì"
+            ],
+            "answer": "Đặt giá trị 10 vào x (Gán)"
+        },
+        {
+            "question": "Đeo kính để nhìn rõ hơn giống nhất với:",
+            "options": [
+                "Cập nhật Driver",
+                "Hỏng CPU",
+                "Cài lại Windows",
+                "Rút phích điện"
+            ],
+            "answer": "Cập nhật Driver"
+        },
+        {
+            "question": "Nói nhiều nhưng không có nội dung giống như:",
+            "options": [
+                "Code sạch",
+                "Spam / Rác dữ liệu",
+                "Thuật toán tối ưu",
+                "Bảo mật cao"
+            ],
+            "answer": "Spam / Rác dữ liệu"
+        },
+        {
+            "question": "Flowchart (Sơ đồ khối) giúp ích gì nhất?",
+            "options": [
+                "Làm cho code chạy nhanh hơn",
+                "Hình dung các bước logic trước khi viết code",
+                "Thay thế hoàn toàn ngôn ngữ lập trình",
+                "Trang trí cho đẹp mắt"
+            ],
+            "answer": "Hình dung các bước logic trước khi viết code"
+        },
+        {
+            "question": "Trong Switch-Case, trường hợp ‘Default’ tương ứng với:",
+            "options": [
+                "Khi tất cả các lựa chọn khác đều sai",
+                "Trường hợp ưu tiên hàng đầu",
+                "Lỗi chương trình",
+                "Kết thúc chương trình"
+            ],
+            "answer": "Khi tất cả các lựa chọn khác đều sai"
+        },
+        {
+            "question": "“Học đi đôi với hành” trong lập trình nghĩa là:",
+            "options": [
+                "Chỉ cần đọc sách",
+                "Chỉ cần gõ theo mẫu",
+                "Nắm vững lý thuyết logic và áp dụng vào dự án thực tế",
+                "Không cần học logic"
+            ],
+            "answer": "Nắm vững lý thuyết logic và áp dụng vào dự án thực tế"
+        }
+    ]
+}

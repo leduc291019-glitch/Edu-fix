@@ -1,0 +1,207 @@
+ÔN TYPESCRIPT
+BÀI 3 :
+1. Lấy các phần tử DOM gồm: username, email, password, btnAdd, btnCancel.
+// Lấy các phần tử DOM
+
+username - id (tên :username ) (type: input )
+-id(tên :usernameError) (type: span )
+1//CÔNG THỨC LẤY CÁC PHẦN TỬ DOM
+const tên = (document.getElementById ("tên" ) as HTML(Type)Element).value // áp dung với những cái đúng 
+const tên = document.getElementById ("tên" ) as HTML(Type)Element // áp dung với những cái sai
+
+const username = (document.getElementById ("username") as HTMLInputElement).value
+const usernameError = document.getElementById("usernameError") as HTMLSpanElement
+
+
+2//CÚ PHÁP VIẾT VALIDATEFORM()
+
+BƯỚC 1:
+Function ValidateForm(): boolean{
+        let isValid = True; 
+
+BƯỚC 2: đặt mấy cái id nào error bằng rỗng ("") 
+// CÚ PHÁP ĐẶT BIẾN : id.textContent = "cách đặt"; // cách đặt : có thể ghi 1 đống chữ , hoặc không ghi gì 
+vd: usernameError.textContent = "";
+// làm tương tự với các cái Error còn lại
+
+BƯỚC 3:DÙNG IF ELSE ĐỂ KIỂM TRA CÁC ĐIỀU KIỆN
+Theo đề :
+Username: không được để trống và phải có ít nhất 3 ký tự. 
+o Email: không được để trống và phải đúng định dạng email. 
+o Password: không được để trống và phải có ít nhất 6 ký tự.
+//CÚ PHÁP IF ELSE IF ELSE TRONG TYPESCRIPT :
+If( điều kiện ){
+   câu lệnh 
+}
+else if ( điều kiện ){
+    câu lệnh
+}
+// CÁC CÂU LỆNH
+không được để trống
+có ít nhất 3 ký tự.
+if( username.value.trim()===""){
+  usernameError.textContent = " kí tự không được để trống ";
+  isValid = False;
+}
+else if(username.value.trim().length <3 ){
+  usernameError.textContent = " tên phải có ít nhất 3 kí tự " ;
+  isValid = False;
+}
+LƯU Ý: EMAIL NẾU ĐỀ CHO CẦN ĐÚNG ĐỊNH DẠNG THÌ PHẢI KHAI BÁO EMAIL
+
+const emailDinhDang = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+/^[^\s@]+@[^\s@]+\.[^\s@]+$/ 
+/ : bắt buộc phải có
+^: mở đầu cho một chuỗi kí tự
+$: kết thúc chuỗi
+\s: không được có khoảng trắng
+@:bắt buộc phải có @
+[]: phân chia thành phần
+\. : dấu chấm 
+if(email.value.trim()===""){
+  emailError.textContent = "email không được để trống";
+  isValid=False;
+}
+Else if(!emailDinhDang=(email.value.trim())){
+  emailError.textContent = "email không đúng định dạng";
+  isValid=False;
+}
+if(password.value.trim()<6){
+  paswordError.textContent=" mật khẩu phải lớn hơn 6";
+  isValue=False;
+}
+else if(password.value.trim()===""){
+  paswordError.textContent=" mật khẩu phải lớn hơn 6";
+  isValue=False;
+}
+B3:TRẢ VỀ KẾT QUẢ 
+return isValid;
+
+	// Hàm kiểm tra dữ liệu
+function validateForm(): boolean {
+    let isValid = true;
+
+ // Validate Username
+    if (username.value.trim() === "") {
+        usernameError.textContent = "Username không được để trống";
+        isValid = false;
+    } else if (username.value.trim().length < 3) {
+        usernameError.textContent = "Username phải có ít nhất 3 ký tự";
+        isValid = false;
+    }
+
+    // Validate Email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email.value.trim() === "") {
+        emailError.textContent = "Email không được để trống";
+        isValid = false;
+    } else if (!emailRegex.test(email.value.trim())) {
+        emailError.textContent = "Email không đúng định dạng";
+        isValid = false;
+    }
+
+    // Validate Password
+    if (password.value.trim() === "") {
+        passwordError.textContent = "Password không được để trống";
+        isValid = false;
+    } else if (password.value.length < 6) {
+        passwordError.textContent = "Password phải có ít nhất 6 ký tự";
+        isValid = false;
+    }
+
+    return isValid;
+}
+4. Khi nhấn nút Add, gọi hàm validateForm(). Nếu dữ liệu hợp lệ thì hiển thị thông báo Register success.
+//CÚ PHÁP GỌI HÀM
+thuộc tính.addEventListener("tên_sự_kiện", hàm_xử_lý);
+btnAdd.addEventListener("click", () => {
+    if (validateForm()) {
+        alert("Register success");
+    }
+});
+
+BÀI 2:
+//1. Tạo interface ICourse gồm các thuộc tính:
+inferface Icourse {
+    id:number;
+    name:string;
+    duration: number;
+}
+//2. Tạo class Course implements ICourse.
+// implement : bắt buộc hàm đó phải tuân theo hàm cấu trúc 
+class Course implements Icourse{
+//3.constructor: khởi tạo giá trị ban đầu của các thuộc tính 
+    constructor(id:number,name:string,duration:number){
+        this.id = id;
+        this.name = name;
+        this.duration = duration;
+    }
+// 4. Generic class CourseManager<T>
+class CourseManager<T> {
+    private courses: T[] = [];
+
+    add(item: T): void {
+        this.courses.push(item);
+    }
+
+    getAll(): T[] {
+        return this.courses;
+    }
+}
+
+// 5. Tạo đối tượng CourseManager<Course>
+const manager = new CourseManager<Course>();
+
+// Thêm 2 khóa học
+manager.add(new Course(1, "TypeScript Cơ Bản", 20));
+manager.add(new Course(2, "TypeScript Nâng Cao", 30));
+
+// In danh sách khóa học
+console.log(manager.getAll());
+}
+ Bài 1 : 
+Xây dựng chương trình quản lý tài khoản ngân hàng. 
+Yêu cầu: · Tạo abstract class BankAccount gồm: 
+o owner: string 
+o balance: number 
+o Constructor 
+o Abstract method calculateInterest(): number 
+· Tạo hai lớp kế thừa: 
+o SavingsAccount: lãi suất = 6% số dư 
+o CheckingAccount: lãi suất = 2% số dư ·
+ Viết chương trình tạo một đối tượng mỗi loại và hiển thị tổng số tiền sau khi cộng lãi (balance + interest).
+· Giải thích ngắn gọn các nguyên lý OOP được sử dụng trong bài.
+
+abstract class BankAccount{
+
+         owner:string;
+         balance:number;
+         Constructor(owner:string,balance:number){
+                    this.owner=owner;
+                    this.balance=balance;
+                    }
+         Abstract calculateInterest(): number; 
+}
+class SavingAcount extends BankAccount {
+        calculateInterest(): number;
+        return this.balance * 0.06;
+}
+class CheckingAcount extends BankAccount{
+        calculateInterest(): number;
+        return this.balance*0.02;
+}
+const tien = new;
+SavingAcount ("Ngoc",10000);
+console.log(" tổng tiền là " + tien.balance + tien.calculateInterest());
+
+const tiencheck = new;
+CheckingAcount("duidui",10000);
+console.log(" tổng tiền lãi là " + tiencheck.balance + tiencheck.calculateInterest());
+
+
+
+
+
+const username = (document.getElementById("username") as HTMLInputElement).value;
+

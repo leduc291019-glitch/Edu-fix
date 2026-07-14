@@ -1,0 +1,24 @@
+Bạn là một chuyên gia giáo dục và thiết kế trò chơi học tập.
+Hãy phân tích nội dung tài liệu dưới đây và tạo ra một trò chơi trắc nghiệm gồm ĐÚNG 20 CÂU HỎI dựa trên những thông tin quan trọng nhất của tài liệu.
+
+YÊU CẦU:
+1. Số lượng: Đúng 20 câu hỏi.
+2. Mức độ: Đa dạng từ dễ đến khó.
+3. Định dạng: Trả về kết quả hoàn toàn bằng định dạng JSON theo cấu trúc sau, không kèm theo bất kỳ văn bản nào khác ngoài JSON:
+
+{
+  "gameTitle": "Tiêu đề của trò chơi (dựa theo nội dung tài liệu)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Nội dung câu hỏi thứ nhất?",
+      "options": ["Đáp án A", "Đáp án B", "Đáp án C", "Đáp án D"],
+      "correctAnswer": "Đáp án đúng (phải khớp chính xác với 1 trong 4 options)",
+      "explanation": "Giải thích ngắn gọn tại sao đáp án này đúng."
+    },
+    ... (tiếp tục cho đến câu 20)
+  ]
+}
+
+NỘI DUNG TÀI LIỆU CẦN PHÂN TÍCH:
+[Chèn nội dung văn bản được trích xuất từ Bước 1 vào đây]

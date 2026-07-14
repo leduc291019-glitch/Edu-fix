@@ -1,0 +1,206 @@
+{
+    "sourceFile": "L___TH____DI___M_QU___NH_Phi___u_____nh_gi___th___c_t___p___DAK_SYSTEM-1784019396488-47528264.pdf",
+    "analyzedAt": "2026-07-14T08:57:17.199Z",
+    "questions": [
+        {
+            "question": "Phiếu đánh giá kết quả thực tập thuộc về công ty nào?",
+            "options": [
+                "CÔNG TY TNHH DAK SYSTEM",
+                "CÔNG TY TNHH DAK SOFTWARE",
+                "CÔNG TY TNHH TÂY NGUYÊN SYSTEM",
+                "CÔNG TY CỔ PHẦN DAK SYSTEM"
+            ],
+            "answer": "CÔNG TY TNHH DAK SYSTEM"
+        },
+        {
+            "question": "Họ và tên của sinh viên được đánh giá là gì?",
+            "options": [
+                "LÊ THỊ DIỄM TRANG",
+                "LÊ THỊ DIỄM QUỲNH",
+                "NGUYỄN THỊ DIỄM QUỲNH",
+                "LÊ THỊ QUỲNH TRANG"
+            ],
+            "answer": "LÊ THỊ DIỄM QUỲNH"
+        },
+        {
+            "question": "Mã số sinh viên của sinh viên Lê Thị Diễm Quỳnh là gì?",
+            "options": [
+                "241112080",
+                "241112082",
+                "241112081",
+                "241112083"
+            ],
+            "answer": "241112081"
+        },
+        {
+            "question": "Sinh viên Lê Thị Diễm Quỳnh học tại trường nào?",
+            "options": [
+                "Đại học Tây Nguyên",
+                "Cao Đẳng Bách Khoa Tây Nguyên",
+                "Cao đẳng Nghề Tây Nguyên",
+                "Đại học Bách Khoa Đà Nẵng"
+            ],
+            "answer": "Cao Đẳng Bách Khoa Tây Nguyên"
+        },
+        {
+            "question": "Thời gian thực tập của sinh viên bắt đầu từ ngày nào?",
+            "options": [
+                "19/05/2026",
+                "13/06/2026",
+                "19/06/2026",
+                "13/05/2026"
+            ],
+            "answer": "19/05/2026"
+        },
+        {
+            "question": "Thời gian thực tập của sinh viên kết thúc vào ngày nào?",
+            "options": [
+                "19/05/2026",
+                "13/06/2026",
+                "15/06/2026",
+                "13/07/2026"
+            ],
+            "answer": "13/06/2026"
+        },
+        {
+            "question": "Ai là cán bộ hướng dẫn thực tập của sinh viên?",
+            "options": [
+                "Hoàng Quốc Tuấn",
+                "Nguyễn Quốc Tuấn",
+                "Hoàng Anh Tuấn",
+                "Trần Quốc Tuấn"
+            ],
+            "answer": "Hoàng Quốc Tuấn"
+        },
+        {
+            "question": "Điểm đánh giá tiêu chí 'Ý thức kỷ luật' của sinh viên là bao nhiêu?",
+            "options": [
+                "7.0",
+                "7.5",
+                "8.0",
+                "KHÁ"
+            ],
+            "answer": "7.5"
+        },
+        {
+            "question": "Tiêu chí 'Ý thức kỷ luật' bao gồm những nội dung cụ thể nào?",
+            "options": [
+                "Code sạch, UI/UX, Git",
+                "Trách nhiệm, chủ động",
+                "Giờ giấc, nội quy công ty",
+                "PHP, JS, Database..."
+            ],
+            "answer": "Giờ giấc, nội quy công ty"
+        },
+        {
+            "question": "Điểm đánh giá tiêu chí 'Thái độ làm việc' của sinh viên là bao nhiêu?",
+            "options": [
+                "7.5",
+                "8.0",
+                "KHÁ",
+                "TỐT"
+            ],
+            "answer": "7.5"
+        },
+        {
+            "question": "Tiêu chí 'Thái độ làm việc' bao gồm những nội dung cụ thể nào?",
+            "options": [
+                "Giờ giấc, nội quy công ty",
+                "PHP, JS, Database...",
+                "Trách nhiệm, chủ động",
+                "Làm việc nhóm"
+            ],
+            "answer": "Trách nhiệm, chủ động"
+        },
+        {
+            "question": "Điểm đánh giá tiêu chí 'Kiến thức chuyên môn' là bao nhiêu?",
+            "options": [
+                "7.0",
+                "7.5",
+                "8.0",
+                "KHÁ"
+            ],
+            "answer": "7.5"
+        },
+        {
+            "question": "Tiêu chí 'Kiến thức chuyên môn' gồm những nội dung nào được liệt kê?",
+            "options": [
+                "Code sạch, UI/UX, Git",
+                "PHP, JS, Database...",
+                "Trách nhiệm, chủ động",
+                "Làm việc nhóm & Kỹ năng giao tiếp"
+            ],
+            "answer": "PHP, JS, Database..."
+        },
+        {
+            "question": "Tiêu chí 'Kỹ năng thực hành' bao gồm những nội dung cụ thể nào?",
+            "options": [
+                "PHP, JS, Database...",
+                "Giờ giấc, nội quy công ty",
+                "Code sạch, UI/UX, Git",
+                "Làm việc nhóm & Kỹ năng giao tiếp"
+            ],
+            "answer": "Code sạch, UI/UX, Git"
+        },
+        {
+            "question": "Điểm đánh giá tiêu chí 'Kỹ năng thực hành' là bao nhiêu?",
+            "options": [
+                "7.0",
+                "7.5",
+                "8.0",
+                "KHÁ"
+            ],
+            "answer": "7.5"
+        },
+        {
+            "question": "Tiêu chí 'Làm việc nhóm & Kỹ năng giao tiếp' được xếp loại như thế nào?",
+            "options": [
+                "7.5",
+                "TỐT",
+                "KHÁ",
+                "TRUNG BÌNH"
+            ],
+            "answer": "KHÁ"
+        },
+        {
+            "question": "Tiêu chí 'Tiến độ công việc (Hoàn thành task đúng hạn)' được xếp loại như thế nào?",
+            "options": [
+                "7.5",
+                "KHÁ",
+                "TỐT",
+                "TRUNG BÌNH"
+            ],
+            "answer": "KHÁ"
+        },
+        {
+            "question": "Nhận xét ưu điểm của sinh viên là gì?",
+            "options": [
+                "Có ý thức kỷ luật tốt, tuân thủ đúng giờ giấc và các quy định của công ty.",
+                "Kiến thức chuyên môn vững vàng, hoàn thành xuất sắc nhiệm vụ.",
+                "Kỹ năng thực hành tốt, code sạch đẹp đúng chuẩn UI/UX.",
+                "Làm việc nhóm hiệu quả và giao tiếp tự tin."
+            ],
+            "answer": "Có ý thức kỷ luật tốt, tuân thủ đúng giờ giấc và các quy định của công ty."
+        },
+        {
+            "question": "Hạn chế cần khắc phục của sinh viên là gì?",
+            "options": [
+                "Ý thức kỷ luật chưa tốt, hay đi muộn.",
+                "Kỹ năng giao tiếp và làm việc nhóm còn yếu.",
+                "Tiến độ công việc thường xuyên bị chậm trễ.",
+                "Kiến thức chuyên môn (PHP, JS, Database...) cần được củng cố và trau dồi thêm."
+            ],
+            "answer": "Kiến thức chuyên môn (PHP, JS, Database...) cần được củng cố và trau dồi thêm."
+        },
+        {
+            "question": "Điểm tổng kết và xếp loại chung của sinh viên Lê Thị Diễm Quỳnh lần lượt là bao nhiêu?",
+            "options": [
+                "7.5 và KHÁ",
+                "7.0 và KHÁ",
+                "7.5 và TỐT",
+                "8.0 và KHÁ"
+            ],
+            "answer": "7.5 và KHÁ"
+        }
+    ]
+}

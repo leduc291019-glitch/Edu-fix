@@ -1,0 +1,206 @@
+{
+    "sourceFile": "OOP-1784018194010-674945581.txt",
+    "analyzedAt": "2026-07-14T08:37:04.564Z",
+    "questions": [
+        {
+            "question": "Theo tài liệu, tính kế thừa trong Java được định nghĩa như thế nào?",
+            "options": [
+                "Lớp con sẽ kế thừa 1 hay nhiều thuộc tính của lớp cha",
+                "Lớp cha sẽ kế thừa tất cả các thuộc tính của lớp con",
+                "Lớp con không thể sử dụng các thuộc tính của lớp cha",
+                "Các lớp tự động chia sẻ thuộc tính mà không cần khai báo"
+            ],
+            "answer": "Lớp con sẽ kế thừa 1 hay nhiều thuộc tính của lớp cha"
+        },
+        {
+            "question": "Từ khóa nào được sử dụng để thực hiện kế thừa trong Java?",
+            "options": [
+                "implements",
+                "extends",
+                "inherit",
+                "super"
+            ],
+            "answer": "extends"
+        },
+        {
+            "question": "Ý nghĩa của việc kế thừa theo tài liệu là gì?",
+            "options": [
+                "Để tăng tốc độ thực thi của chương trình",
+                "Để liên kết thuộc tính của lớp con với lớp cha, làm cho chương trình chặt chẽ hơn",
+                "Để bảo mật thông tin của các thuộc tính trong lớp cha",
+                "Để giảm thiểu việc sử dụng bộ nhớ RAM"
+            ],
+            "answer": "Để liên kết thuộc tính của lớp con với lớp cha, làm cho chương trình chặt chẽ hơn"
+        },
+        {
+            "question": "Phương thức ghi đè (override) được định nghĩa như thế nào trong tài liệu?",
+            "options": [
+                "Lớp cha ghi đè lên các phương thức của lớp con",
+                "1 lớp con cung cấp 1 phương thức hay công thức đã được định nghĩa ở lớp cha",
+                "Việc xóa bỏ một phương thức cũ để thay bằng phương thức mới",
+                "Lớp con không được phép dùng lại phương thức của lớp cha"
+            ],
+            "answer": "1 lớp con cung cấp 1 phương thức hay công thức đã được định nghĩa ở lớp cha"
+        },
+        {
+            "question": "Lớp Sach có những thuộc tính private nào?",
+            "options": [
+                "maSach, tenSach, soLuong",
+                "maSach, tenSach, giaSach",
+                "maSach, giaSach, thue",
+                "tenSach, giaSach, soLuong"
+            ],
+            "answer": "maSach, tenSach, giaSach"
+        },
+        {
+            "question": "Kiểu dữ liệu của thuộc tính giaSach trong lớp Sach là gì?",
+            "options": [
+                "int",
+                "float",
+                "double",
+                "String"
+            ],
+            "answer": "double"
+        },
+        {
+            "question": "Constructor của lớp Sach nhận vào những tham số nào?",
+            "options": [
+                "String maSach, String tenSach",
+                "String maSach, String tenSach, double giaSach",
+                "String maSach, String tenSach, double giaSach, int soLuong",
+                "String tenSach, double giaSach"
+            ],
+            "answer": "String maSach, String tenSach, double giaSach"
+        },
+        {
+            "question": "Phương thức thanhTien() định nghĩa trong lớp Sach trả về giá trị nào?",
+            "options": [
+                "return this.giaSach;",
+                "return this.thanhTien;",
+                "return this.maSach;",
+                "Không trả về gì cả"
+            ],
+            "answer": "return this.thanhTien;"
+        },
+        {
+            "question": "Phương thức hienThi() của lớp Sach in ra những thông tin gì?",
+            "options": [
+                "mã sách, tên sách, giá sách",
+                "mã sách, tên sách, số lượng",
+                "tên sách, giá sách, thuế",
+                "mã sách, giá sách, thành tiền"
+            ],
+            "answer": "mã sách, tên sách, giá sách"
+        },
+        {
+            "question": "Lớp SachGiaoKhoa kế thừa từ lớp nào?",
+            "options": [
+                "SachThamKhao",
+                "Sach",
+                "main",
+                "viDu"
+            ],
+            "answer": "Sach"
+        },
+        {
+            "question": "Thuộc tính riêng nào được khai báo thêm trong lớp SachGiaoKhoa?",
+            "options": [
+                "thue",
+                "soLuong",
+                "giaSach",
+                "maSach"
+            ],
+            "answer": "soLuong"
+        },
+        {
+            "question": "Trong constructor của SachGiaoKhoa, từ khóa nào được dùng để gọi constructor của lớp cha?",
+            "options": [
+                "this",
+                "parent",
+                "super",
+                "extends"
+            ],
+            "answer": "super"
+        },
+        {
+            "question": "Công thức tính thanhTien() được ghi đè trong lớp SachGiaoKhoa là gì?",
+            "options": [
+                "return this.giaSach * this.soLuong;",
+                "return this.giaSach * 10;",
+                "return this.soLuong * 1000;",
+                "return this.giaSach + this.soLuong;"
+            ],
+            "answer": "return this.giaSach * this.soLuong;"
+        },
+        {
+            "question": "Lớp SachThamKhao khai báo thêm thuộc tính riêng nào?",
+            "options": [
+                "soLuong",
+                "thue",
+                "giaSach",
+                "maSach"
+            ],
+            "answer": "thue"
+        },
+        {
+            "question": "Kiểu dữ liệu của thuộc tính thue trong lớp SachThamKhao là gì?",
+            "options": [
+                "int",
+                "String",
+                "double",
+                "float"
+            ],
+            "answer": "double"
+        },
+        {
+            "question": "Công thức tính thanhTien() của lớp SachThamKhao trong tài liệu là gì?",
+            "options": [
+                "return (this.giasach +(this.giaSach*this.thue/100))*this.soLuong",
+                "return this.giaSach * this.thue",
+                "return this.giaSach * this.soLuong",
+                "return (this.giaSach + this.thue) * 10"
+            ],
+            "answer": "return (this.giasach +(this.giaSach*this.thue/100))*this.soLuong"
+        },
+        {
+            "question": "Thư viện nào được import ở đầu lớp main trong tài liệu?",
+            "options": [
+                "import.java.util.List",
+                "import.java.util.ArrayList",
+                "import.java.io.File",
+                "import.java.lang.Math"
+            ],
+            "answer": "import.java.util.ArrayList"
+        },
+        {
+            "question": "Phương thức main nhận tham số đầu vào có kiểu dữ liệu là gì?",
+            "options": [
+                "String args",
+                "String[]args",
+                "int[] args",
+                "ArrayList<String> args"
+            ],
+            "answer": "String[]args"
+        },
+        {
+            "question": "Trong lớp viDu, các thuộc tính nào được khai báo?",
+            "options": [
+                "Private String ten; Private Double so;",
+                "Private String ten; Private int so;",
+                "Public String ten; Public Double so;",
+                "Private String maSach; Private Double giaSach;"
+            ],
+            "answer": "Private String ten; Private Double so;"
+        },
+        {
+            "question": "Trong hàm main, danh sách stk chứa các đối tượng thuộc lớp nào?",
+            "options": [
+                "SachGiaoKhoa",
+                "SachThamKhao",
+                "Sach",
+                "viDu"
+            ],
+            "answer": "SachThamKhao"
+        }
+    ]
+}

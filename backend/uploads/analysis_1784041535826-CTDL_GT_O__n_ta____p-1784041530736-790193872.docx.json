@@ -1,0 +1,206 @@
+{
+    "sourceFile": "CTDL_GT_O__n_ta____p-1784041530736-790193872.docx",
+    "analyzedAt": "2026-07-14T15:05:35.826Z",
+    "questions": [
+        {
+            "question": "Độ phức tạp thời gian của đoạn code: if(a<0){m=0;} else {for(int i=0; i<n; i++){m+=1;}} là gì?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(n^2)",
+                "O(log n)"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Trong bảng băm kích thước 13, với hàm băm h(x) = x % 13, vị trí của khóa 14 là bao nhiêu?",
+            "options": [
+                "0",
+                "1",
+                "14",
+                "13"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Tìm kiếm tuyến tính trên mảng n phần tử có độ phức tạp trường hợp xấu nhất là bao nhiêu?",
+            "options": [
+                "O(1)",
+                "O(log n)",
+                "O(n)",
+                "O(n log n)"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Thuật toán Quick Sort có độ phức tạp trung bình là bao nhiêu?",
+            "options": [
+                "O(n)",
+                "O(n log n)",
+                "O(n^2)",
+                "O(log n)"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Trong danh sách liên kết đơn, việc thêm một phần tử vào đầu danh sách có độ phức tạp là bao nhiêu?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n^2)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Độ phức tạp của đoạn code lồng nhau: for(i=0; i<m; i++) { for(j=0; j<n; j++) { s += a[i][j]; } } là gì?",
+            "options": [
+                "O(n)",
+                "O(m)",
+                "O(m+n)",
+                "O(m*n)"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Với bảng băm kích thước 11, hàm băm h(x) = x % 11, giá trị 13 sẽ nằm ở vị trí nào?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "0"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Điều kiện tiên quyết để thực hiện thuật toán tìm kiếm nhị phân là gì?",
+            "options": [
+                "Mảng đã sắp xếp",
+                "Mảng không cần sắp xếp",
+                "Mảng phải có kích thước lẻ",
+                "Mảng phải chứa số nguyên"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Thuật toán sắp xếp nổi bọt (Bubble Sort) có độ phức tạp trường hợp xấu nhất là bao nhiêu?",
+            "options": [
+                "O(n)",
+                "O(n log n)",
+                "O(n^2)",
+                "O(log n)"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Ngăn xếp (Stack) hoạt động theo nguyên lý nào?",
+            "options": [
+                "FIFO",
+                "LIFO",
+                "Random",
+                "Priority"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Độ phức tạp của đoạn code: for(i=0; i<5; i++) { for(j=0; j<n; j++) { tong++; } } là gì?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(5n)",
+                "O(n^2)"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Dò bậc 2 (Quadratic probing) trong bảng băm sử dụng công thức nào để giải quyết xung đột?",
+            "options": [
+                "(h(x)+i)%m",
+                "(h(x)+i^2)%m",
+                "(h(x)+2i)%m",
+                "(h(x)+i^3)%m"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Thuật toán sắp xếp chèn (Insertion Sort) hiệu quả nhất khi nào?",
+            "options": [
+                "Mảng đã gần được sắp xếp",
+                "Mảng ngược hoàn toàn",
+                "Mảng có kích thước rất lớn",
+                "Mảng không có thứ tự"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Hàng đợi (Queue) hoạt động theo nguyên lý nào?",
+            "options": [
+                "FIFO",
+                "LIFO",
+                "Random",
+                "Priority"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Khi tìm kiếm không thấy phần tử trong mảng, phương pháp tìm kiếm tuyến tính trả về giá trị nào?",
+            "options": [
+                "0",
+                "-1",
+                "null",
+                "n"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Trong danh sách liên kết đơn, việc xóa phần tử cuối danh sách đòi hỏi phải làm gì?",
+            "options": [
+                "Duyệt đến nút cuối",
+                "Xóa trực tiếp",
+                "Truy cập bằng chỉ số",
+                "Không thể xóa"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Độ phức tạp của thuật toán tìm kiếm nhị phân là bao nhiêu?",
+            "options": [
+                "O(n)",
+                "O(n log n)",
+                "O(log n)",
+                "O(1)"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Thao tác thêm phần tử vào ngăn xếp thường được gọi là gì?",
+            "options": [
+                "Pop",
+                "Push",
+                "Enqueue",
+                "Dequeue"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Thao tác lấy phần tử ra khỏi hàng đợi được gọi là gì?",
+            "options": [
+                "Pop",
+                "Push",
+                "Enqueue",
+                "Dequeue"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Cấu trúc dữ liệu nào phù hợp nhất để cài đặt thuật toán duyệt đồ thị theo chiều rộng (BFS)?",
+            "options": [
+                "Stack",
+                "Queue",
+                "Array",
+                "Linked List"
+            ],
+            "answer": 1
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGame-AI - Bảng Điều Khiển</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <i class="fa-solid fa-brain"></i>
+                <span>EduGame-AI</span>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="./dashboard.html" class="menu-item active"><i class="fa-solid fa-chart-simple"></i> Tổng
+                    quan</a>
+                <a href="./game.html" class="menu-item"><i class="fa-solid fa-gamepad"></i> Kho Trò Chơi</a>
+                <a href="#" class="menu-item"><i class="fa-solid fa-clock-history"></i> Lịch sử học</a>
+                <a href="./index.html" class="menu-item logout"><i class="fa-solid fa-right-from-bracket"></i> Đăng
+                    xuất</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div class="welcome-text">
+                    <h2>Xin chào, Học viên xuất sắc! 👋</h2>
+                    <p>Hôm nay bạn muốn biến tài liệu nào thành trò chơi?</p>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">AI</div>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <i class="fa-solid fa-file-pdf icon"></i>
+                    <div>
+                        <h3>Tài liệu đã tải</h3>
+                        <p id="total-docs">0</p>
+                        <div class="stat-card">
+                            <i class="fa-solid fa-trophy icon"></i>
+                            <div>
+                                <h3>Điểm tích lũy</h3>
+                                <p id="total-score">1,250</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fa-solid fa-bolt icon"></i>
+                            <div>
+                                <h3>Trò chơi đã tạo</h3>
+                                <p id="total-games">0</p>
+                            </div>
+                        </div>
+            </section>
+
+            <section class="dashboard-core">
+                <div class="core-card upload-box">
+                    <h3><i class="fa-solid fa-cloud-arrow-up"></i> Tải Lên Tài Liệu Mới</h3>
+                    <p class="card-subtitle">Bước 1: tải lên tài liệu. Bước 2: AI phân tích và tạo trò chơi 20 câu hỏi.
+                    </p>
+                    <div class="drop-zone" id="drop-zone">
+                        <i class="fa-solid fa-file-circle-plus drop-icon"></i>
+                        <p>Kéo thả tài liệu vào đây hoặc click để chọn file</p>
+                        <input type="file" id="file-input" hidden accept=".pdf,.docx,.txt">
+                    </div>
+                    <div id="file-info" class="file-info-hidden">
+                        <p id="file-name"></p>
+                        <button id="btn-upload" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Tải lên hệ
+                            thống</button>
+                    </div>
+                </div>
+
+                <div class="core-card documents-list">
+                    <h3><i class="fa-solid fa-folder-open"></i> Thư Viện Tài Liệu Của Bạn</h3>
+                    <p class="card-subtitle">Chọn tài liệu bên dưới để AI phân tích và tạo bộ câu hỏi đa dạng từ nội
+                        dung đó</p>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tên tài liệu</th>
+                                    <th>Ngày tải</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody id="documents-tbody">
+                                <tr id="no-data-row">
+                                    <td colspan="3" style="text-align: center; color: rgba(255,255,255,0.6);">Chưa có
+                                        tài liệu nào được tải lên.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-core" style="margin-top: 24px;">
+                <div class="core-card">
+                    <h3><i class="fa-solid fa-gamepad"></i> Kho Trò Chơi</h3>
+                    <p class="card-subtitle">Danh sách các bộ câu hỏi đã tạo. Bấm vào trò chơi để vào phần chơi ngay.
+                    </p>
+                    <div id="games-library"
+                        style="display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/ai.js"></script>
+    <script src="./js/upload.js"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+
+</html>

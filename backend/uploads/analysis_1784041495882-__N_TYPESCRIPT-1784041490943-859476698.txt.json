@@ -1,0 +1,206 @@
+{
+    "sourceFile": "__N_TYPESCRIPT-1784041490943-859476698.txt",
+    "analyzedAt": "2026-07-14T15:04:55.882Z",
+    "questions": [
+        {
+            "question": "Để lấy giá trị của một input element trong TypeScript, ta sử dụng cú pháp nào?",
+            "options": [
+                "(document.getElementById('id') as HTMLInputElement).value",
+                "document.getElementById('id').value",
+                "document.querySelector('id').value",
+                "(document.getElementById('id') as HTMLInputElement)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Trong hàm validateForm, biến isValid thường được khởi tạo với giá trị nào?",
+            "options": [
+                "null",
+                "false",
+                "true",
+                "undefined"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Để xóa nội dung lỗi hiển thị trên một thẻ span, ta sử dụng thuộc tính nào?",
+            "options": [
+                "value",
+                "innerHTML",
+                "textContent",
+                "innerText"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Ký tự nào trong Regex dùng để biểu thị bắt đầu của một chuỗi?",
+            "options": [
+                "$",
+                "^",
+                "\\s",
+                "."
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Ký tự nào trong Regex dùng để biểu thị kết thúc của một chuỗi?",
+            "options": [
+                "@",
+                "^",
+                "$",
+                "."
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Hàm nào được sử dụng để gắn sự kiện click cho một nút bấm?",
+            "options": [
+                "onclick",
+                "addEvent",
+                "addEventListener",
+                "attachEvent"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Khi sử dụng interface trong TypeScript, từ khóa nào dùng để bắt buộc một class tuân theo cấu trúc đó?",
+            "options": [
+                "extends",
+                "implements",
+                "interface",
+                "class"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Trong Generic class CourseManager<T>, ký tự T đại diện cho điều gì?",
+            "options": [
+                "Một kiểu dữ liệu cụ thể",
+                "Một biến số",
+                "Một kiểu dữ liệu tùy chọn (generic type)",
+                "Một hàm"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Để khai báo một phương thức trừu tượng (abstract method) trong class, ta cần từ khóa nào?",
+            "options": [
+                "static",
+                "abstract",
+                "virtual",
+                "override"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Một class chứa phương thức abstract thì class đó phải là gì?",
+            "options": [
+                "Interface",
+                "Abstract class",
+                "Generic class",
+                "Static class"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Trong bài tập ngân hàng, lớp SavingsAccount kế thừa từ lớp nào?",
+            "options": [
+                "Course",
+                "BankAccount",
+                "CheckingAccount",
+                "Object"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Để khởi tạo giá trị ban đầu cho các thuộc tính của class, ta dùng phương thức nào?",
+            "options": [
+                "init()",
+                "create()",
+                "constructor()",
+                "start()"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Phương thức nào dùng để thêm phần tử vào mảng trong TypeScript?",
+            "options": [
+                "add()",
+                "push()",
+                "insert()",
+                "append()"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Điều kiện để username hợp lệ theo đề bài là gì?",
+            "options": [
+                "Không trống, ít nhất 6 ký tự",
+                "Không trống, ít nhất 3 ký tự",
+                "Không trống, ít nhất 8 ký tự",
+                "Ít nhất 3 ký tự"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Điều kiện để password hợp lệ theo đề bài là gì?",
+            "options": [
+                "Không trống, ít nhất 3 ký tự",
+                "Không trống, ít nhất 6 ký tự",
+                "Không trống, ít nhất 8 ký tự",
+                "Ít nhất 6 ký tự"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Trong Regex, ký tự nào dùng để đại diện cho khoảng trắng?",
+            "options": [
+                "\\s",
+                "\\w",
+                "\\d",
+                "\\t"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Hàm validateForm trả về kiểu dữ liệu nào?",
+            "options": [
+                "void",
+                "string",
+                "boolean",
+                "number"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Để kiểm tra định dạng email, ta sử dụng phương thức nào của đối tượng Regex?",
+            "options": [
+                "match()",
+                "test()",
+                "check()",
+                "validate()"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Từ khóa nào dùng để truy cập thuộc tính của class hiện tại?",
+            "options": [
+                "self",
+                "this",
+                "super",
+                "base"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Trong bài tập CourseManager, thuộc tính courses được khai báo với phạm vi truy cập nào?",
+            "options": [
+                "public",
+                "private",
+                "protected",
+                "static"
+            ],
+            "answer": 1
+        }
+    ]
+}

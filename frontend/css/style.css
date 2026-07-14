@@ -1,0 +1,215 @@
+/* ==========================================================================
+   EduGame-AI - Toàn bộ Style cho Trang chủ (style.css)
+   ========================================================================== */
+
+/* 1. KHỞI TẠO BIẾN (VARIABLES) & RESET STYLES */
+:root {
+    --bg-color: #7f53ff;
+    /* Màu nền chính - Đen sâu */
+    --surface-color: #ffffff;
+    /* Màu nền phụ - Đen nhẹ */
+    --accent-color: #9900ff;
+    /* Màu chủ đạo - Cyan Electric (Xanh ngọc bích phát sáng) */
+    --accent-hover: #3f00d2;
+    /* Màu khi hover qua nút */
+    --text-main: #FFFFFF;
+    /* Chữ trắng chính */
+    --text-muted: #ffffff;
+    /* Chữ xám cho nội dung phụ */
+    --border-color: #ffffff;
+    /* Đường viền tinh tế */
+    --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Hiệu ứng gradient nền huyền ảo */
+    background-image:
+        radial-gradient(circle at 80% 20%, rgba(0, 245, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 10% 80%, rgba(0, 245, 255, 0.03) 0%, transparent 50%);
+}
+
+/* 2. THANH ĐIỀU HƯỚNG (HEADER / NAVIGATION) */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.75);
+    backdrop-filter: blur(12px);
+    /* Hiệu ứng kính mờ (Glassmorphism) */
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--text-main);
+}
+
+#nav-logo {
+    height: 36px;
+    width: auto;
+    /* Tạo hiệu ứng phát sáng nhẹ cho logo nếu chưa có shadow */
+    filter: drop-shadow(0 0 8px rgba(0, 245, 255, 0.3));
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* 3. THIẾT KẾ NÚT (BUTTONS) */
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #000000;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 245, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 245, 255, 0.4);
+}
+
+.btn-secondary {
+    color: var(--text-main);
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--text-muted);
+}
+
+.btn-large {
+    background-color: var(--accent-color);
+    color: #000000;
+    padding: 16px 36px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(0, 245, 255, 0.25);
+    display: inline-block;
+}
+
+.btn-large:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 245, 255, 0.5);
+}
+
+/* 4. PHẦN BANNER CHÍNH (HERO SECTION) */
+.hero-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 180px 20px 100px 20px;
+    /* Chừa khoảng trống cho fixed header */
+    text-align: center;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+/* Chữ highlight phát sáng */
+.hero-section .highlight {
+    color: var(--accent-color);
+    text-shadow: 0 0 20px rgba(0, 245, 255, 0.4);
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* 5. PHẦN CHÂN TRANG (FOOTER) */
+footer {
+    border-top: 1px solid var(--border-color);
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #050505;
+}
+
+footer p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* 6. RESPONSIVE (TƯƠNG THÍCH DI ĐỘNG) */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 140px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.05rem;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    .logo span {
+        display: none;
+        /* Ẩn chữ thương hiệu trên mobile quá nhỏ, giữ lại logo pic */
+    }
+}

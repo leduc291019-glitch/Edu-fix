@@ -1,0 +1,206 @@
+{
+    "sourceFile": "S____d___ng______ng_d___th___c_______gi___i_to__n-1784041587007-304366021.pdf",
+    "analyzedAt": "2026-07-14T15:06:33.105Z",
+    "questions": [
+        {
+            "question": "Cho a, b là các số nguyên và m là số tự nhiên lớn hơn 1. Điều kiện nào sau đây tương đương với a ≡ b (mod m)?",
+            "options": [
+                "A. a + b chia hết cho m",
+                "B. a - b chia hết cho m",
+                "C. a * b chia hết cho m",
+                "D. a / b chia hết cho m"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Nếu a ≡ b (mod m) và b ≡ c (mod m) thì:",
+            "options": [
+                "A. a ≡ c (mod m)",
+                "B. a + c ≡ 0 (mod m)",
+                "C. a * c ≡ 0 (mod m)",
+                "D. a - c chia hết cho m^2"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Nếu a ≡ b (mod m) thì với mọi số tự nhiên n > 1, ta có:",
+            "options": [
+                "A. a^n ≡ b^n (mod m)",
+                "B. a^n ≡ b (mod m)",
+                "C. a ≡ b^n (mod m)",
+                "D. a^n ≡ n*b (mod m)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Định lý Fermat bé phát biểu rằng với p là số nguyên tố, ta có:",
+            "options": [
+                "A. a^p ≡ 1 (mod p)",
+                "B. a^p ≡ a (mod p)",
+                "C. a^p ≡ 0 (mod p)",
+                "D. a^p ≡ -a (mod p)"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Theo định lý Fermat bé, nếu UCLN(a, p) = 1 với p là số nguyên tố, thì:",
+            "options": [
+                "A. a^(p-1) ≡ 0 (mod p)",
+                "B. a^(p-1) ≡ 1 (mod p)",
+                "C. a^(p-1) ≡ -1 (mod p)",
+                "D. a^(p-1) ≡ a (mod p)"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Chữ số tận cùng của số 2023^2024 là:",
+            "options": [
+                "A. 1",
+                "B. 3",
+                "C. 7",
+                "D. 9"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Chữ số tận cùng của số 1978^(2024^2025) là:",
+            "options": [
+                "A. 2",
+                "B. 4",
+                "C. 6",
+                "D. 8"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Hai chữ số tận cùng của số A = 2^2023 là:",
+            "options": [
+                "A. 04",
+                "B. 08",
+                "C. 12",
+                "D. 16"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Số chính phương khi chia cho 4 có thể có số dư là:",
+            "options": [
+                "A. 0 hoặc 1",
+                "B. 1 hoặc 2",
+                "C. 0 hoặc 3",
+                "D. 2 hoặc 3"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Lập phương của một số tự nhiên khi chia cho 9 có thể có số dư là:",
+            "options": [
+                "A. 0, 1, 2",
+                "B. 0, 1, 8",
+                "C. 1, 2, 3",
+                "D. 0, 3, 6"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Nếu a ≡ b (mod m) thì a + c ≡ b + c (mod m) với:",
+            "options": [
+                "A. c là số nguyên bất kỳ",
+                "B. c là số nguyên tố",
+                "C. c là bội của m",
+                "D. c là ước của m"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Nếu a ≡ b (mod m) và c ≡ d (mod m) thì:",
+            "options": [
+                "A. a + c ≡ b - d (mod m)",
+                "B. a - c ≡ b - d (mod m)",
+                "C. ac ≡ bd (mod m)",
+                "D. a/c ≡ b/d (mod m)"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Cho a ≡ b (mod m), nếu d là ước nguyên dương của m thì:",
+            "options": [
+                "A. a ≡ b (mod d)",
+                "B. a ≡ b (mod m/d)",
+                "C. a ≡ b (mod m*d)",
+                "D. a ≡ b (mod d^2)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Nếu a ≡ b (mod m) thì UCLN(a, m) bằng:",
+            "options": [
+                "A. UCLN(b, m)",
+                "B. UCLN(a, b)",
+                "C. UCLN(m, a+b)",
+                "D. UCLN(m, a-b)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Số dư của 2023^2024 khi chia cho 3 là:",
+            "options": [
+                "A. 0",
+                "B. 1",
+                "C. 2",
+                "D. 3"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Phương trình nghiệm nguyên dương 4^x = 3^y + 1 có nghiệm là:",
+            "options": [
+                "A. (1, 1)",
+                "B. (2, 2)",
+                "C. (1, 2)",
+                "D. (2, 1)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Nếu a ≡ b (mod m) thì a*k ≡ b*k (mod m*k) với:",
+            "options": [
+                "A. k là số tự nhiên",
+                "B. k là số nguyên âm",
+                "C. k là số 0",
+                "D. k là số thực"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Phát biểu nào sau đây là đúng về tính chất đồng dư?",
+            "options": [
+                "A. a ≡ b (mod m) thì a^n ≡ b^n (mod m)",
+                "B. a ≡ b (mod m) thì a^n ≡ b^n (mod m^n)",
+                "C. a ≡ b (mod m) thì a^n ≡ b (mod m)",
+                "D. a ≡ b (mod m) thì a ≡ b^n (mod m)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Nếu a ≡ b (mod m) và UCLN(e, m) = 1 thì:",
+            "options": [
+                "A. a^e ≡ b^e (mod m)",
+                "B. e^a ≡ e^b (mod m)",
+                "C. a/e ≡ b/e (mod m)",
+                "D. a+e ≡ b+e (mod m^2)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Tìm số dư của 3^2024 + 4^2025 khi chia cho 11:",
+            "options": [
+                "A. 3",
+                "B. 4",
+                "C. 5",
+                "D. 6"
+            ],
+            "answer": 2
+        }
+    ]
+}

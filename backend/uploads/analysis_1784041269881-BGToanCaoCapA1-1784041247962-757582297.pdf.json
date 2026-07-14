@@ -1,0 +1,206 @@
+{
+    "sourceFile": "BGToanCaoCapA1-1784041247962-757582297.pdf",
+    "analyzedAt": "2026-07-14T15:01:09.881Z",
+    "questions": [
+        {
+            "question": "Dãy số {x_n} được gọi là hội tụ về số thực a nếu với mọi ε > 0, tồn tại N sao cho với mọi n > N thì điều gì xảy ra?",
+            "options": [
+                "|x_n - a| < ε",
+                "|x_n + a| < ε",
+                "|x_n| < ε",
+                "|a - x_n| > ε"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Dãy số {x_n} được gọi là bị chặn nếu tồn tại số thực a sao cho điều gì đúng với mọi n?",
+            "options": [
+                "|x_n| <= a",
+                "x_n <= a",
+                "x_n >= a",
+                "x_n = a"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Theo tiêu chuẩn hội tụ 3, dãy số như thế nào thì hội tụ?",
+            "options": [
+                "Đơn điệu và bị chặn",
+                "Chỉ cần bị chặn",
+                "Chỉ cần đơn điệu",
+                "Không cần điều kiện gì"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Giá trị của lim (1 + 1/n)^n khi n tiến tới vô cùng là gì?",
+            "options": [
+                "1",
+                "e",
+                "0",
+                "vô cùng"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Hàm số y = arcsin x có miền xác định là gì?",
+            "options": [
+                "[-1, 1]",
+                "[0, 1]",
+                "R",
+                "[-π/2, π/2]"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Giá trị của lim (sin x / x) khi x tiến tới 0 là bao nhiêu?",
+            "options": [
+                "0",
+                "1",
+                "π",
+                "không tồn tại"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Hàm số f(x) được gọi là vô cùng bé khi x -> a nếu điều gì xảy ra?",
+            "options": [
+                "lim f(x) = 0",
+                "lim f(x) = 1",
+                "lim f(x) = vô cùng",
+                "f(x) bị chặn"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Nếu f(x) ~ g(x) khi x -> a, điều này có nghĩa là gì?",
+            "options": [
+                "lim (f(x)/g(x)) = 1",
+                "lim (f(x) - g(x)) = 0",
+                "f(x) = g(x)",
+                "lim (f(x)/g(x)) = 0"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Công thức đạo hàm của hàm số y = arcsin x là gì?",
+            "options": [
+                "1/sqrt(1-x^2)",
+                "-1/sqrt(1-x^2)",
+                "1/(1+x^2)",
+                "-1/(1+x^2)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Đạo hàm cấp n của hàm f(x) = sin x là gì?",
+            "options": [
+                "sin(x + nπ/2)",
+                "cos(x + nπ/2)",
+                "sin(x)",
+                "cos(x)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Vi phân của hàm y = f(x) được ký hiệu là dy bằng gì?",
+            "options": [
+                "f'(x)dx",
+                "f'(x)",
+                "f(x)dx",
+                "df(x)"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Định lý Rolle áp dụng cho hàm số liên tục trên [a, b] và có đạo hàm trên (a, b) thỏa mãn điều kiện gì?",
+            "options": [
+                "f(a) = f(b)",
+                "f(a) != f(b)",
+                "f(a) = 0",
+                "f(b) = 0"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Quy tắc L'Hospital được sử dụng để giải các dạng vô định nào?",
+            "options": [
+                "0/0 hoặc vô cùng/vô cùng",
+                "0*vô cùng",
+                "vô cùng - vô cùng",
+                "tất cả các đáp án trên"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Công thức Maclaurin của hàm e^x là gì?",
+            "options": [
+                "1 + x + x^2/2! + ...",
+                "1 - x + x^2/2! - ...",
+                "x + x^2/2! + ...",
+                "1 + x^2/2! + ..."
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Nguyên hàm của 1/x dx là gì?",
+            "options": [
+                "ln|x| + C",
+                "x^2/2 + C",
+                "1/x^2 + C",
+                "e^x + C"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Tích phân từng phần có công thức là gì?",
+            "options": [
+                "∫udv = uv - ∫vdu",
+                "∫udv = uv + ∫vdu",
+                "∫udv = u'v - ∫v'u",
+                "∫udv = uv"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Đạo hàm riêng của hàm f(x, y) theo biến x ký hiệu là gì?",
+            "options": [
+                "∂f/∂x",
+                "df/dx",
+                "f'(x)",
+                "∂f/∂y"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Định lý Schwarz nói rằng nếu các đạo hàm riêng cấp 2 liên tục thì điều gì xảy ra?",
+            "options": [
+                "fxy = fyx",
+                "fxx = fyy",
+                "fxy = -fyx",
+                "fxy = 0"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Điều kiện cần để hàm số đạt cực trị tại điểm dừng là gì?",
+            "options": [
+                "Các đạo hàm riêng cấp 1 bằng 0",
+                "Các đạo hàm riêng cấp 2 bằng 0",
+                "Hàm số không đổi",
+                "Hàm số không có đạo hàm"
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Chuỗi số nhân vô hạn hội tụ khi nào?",
+            "options": [
+                "|q| < 1",
+                "|q| > 1",
+                "q = 1",
+                "q = -1"
+            ],
+            "answer": 0
+        }
+    ]
+}

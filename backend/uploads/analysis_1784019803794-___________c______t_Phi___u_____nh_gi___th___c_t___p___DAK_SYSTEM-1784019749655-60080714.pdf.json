@@ -1,0 +1,206 @@
+{
+    "sourceFile": "___________c______t_Phi___u_____nh_gi___th___c_t___p___DAK_SYSTEM-1784019749655-60080714.pdf",
+    "analyzedAt": "2026-07-14T09:03:23.794Z",
+    "questions": [
+        {
+            "question": "Sinh viên thực tập tại công ty nào?",
+            "options": [
+                "CÔNG TY TNHH DAK SYSTEM",
+                "Cao Đẳng Bách Khoa Tây Nguyên",
+                "Công ty Phần mềm Tây Nguyên",
+                "Công ty DAK Tech"
+            ],
+            "answer": "CÔNG TY TNHH DAK SYSTEM"
+        },
+        {
+            "question": "Họ và tên của sinh viên thực tập là gì?",
+            "options": [
+                "Hoàng Quốc Tuấn",
+                "Đỗ Đức Đạt",
+                "Nguyễn Văn A",
+                "Trần Văn B"
+            ],
+            "answer": "Đỗ Đức Đạt"
+        },
+        {
+            "question": "Mã số sinh viên của Đỗ Đức Đạt là bao nhiêu?",
+            "options": [
+                "241112080",
+                "241112085",
+                "241112090",
+                "241112095"
+            ],
+            "answer": "241112085"
+        },
+        {
+            "question": "Sinh viên đang theo học tại trường nào?",
+            "options": [
+                "Đại học Tây Nguyên",
+                "Cao Đẳng Bách Khoa Tây Nguyên",
+                "Đại học Bách Khoa",
+                "Cao đẳng Kỹ thuật"
+            ],
+            "answer": "Cao Đẳng Bách Khoa Tây Nguyên"
+        },
+        {
+            "question": "Thời gian thực tập bắt đầu từ ngày nào?",
+            "options": [
+                "19/05/2026",
+                "13/06/2026",
+                "19/06/2026",
+                "13/05/2026"
+            ],
+            "answer": "19/05/2026"
+        },
+        {
+            "question": "Thời gian thực tập kết thúc vào ngày nào?",
+            "options": [
+                "19/05/2026",
+                "13/06/2026",
+                "19/06/2026",
+                "13/05/2026"
+            ],
+            "answer": "13/06/2026"
+        },
+        {
+            "question": "Ai là cán bộ hướng dẫn thực tập cho sinh viên?",
+            "options": [
+                "Đỗ Đức Đạt",
+                "Hoàng Quốc Tuấn",
+                "Nguyễn Văn Tuấn",
+                "Trần Quốc Hoàng"
+            ],
+            "answer": "Hoàng Quốc Tuấn"
+        },
+        {
+            "question": "Điểm số tiêu chí Ý thức kỷ luật là bao nhiêu?",
+            "options": [
+                "6.5",
+                "7.0",
+                "7.5",
+                "6.9"
+            ],
+            "answer": "7.0"
+        },
+        {
+            "question": "Điểm số tiêu chí Thái độ làm việc là bao nhiêu?",
+            "options": [
+                "7.0",
+                "7.5",
+                "6.5",
+                "6.9"
+            ],
+            "answer": "7.5"
+        },
+        {
+            "question": "Điểm số tiêu chí Kiến thức chuyên môn là bao nhiêu?",
+            "options": [
+                "7.0",
+                "7.5",
+                "6.5",
+                "6.9"
+            ],
+            "answer": "6.5"
+        },
+        {
+            "question": "Điểm số tiêu chí Kỹ năng thực hành là bao nhiêu?",
+            "options": [
+                "7.0",
+                "7.5",
+                "6.5",
+                "6.9"
+            ],
+            "answer": "6.5"
+        },
+        {
+            "question": "Xếp loại của tiêu chí Làm việc nhóm & Kỹ năng giao tiếp là gì?",
+            "options": [
+                "Tốt",
+                "Khá",
+                "Trung bình",
+                "Giỏi"
+            ],
+            "answer": "Khá"
+        },
+        {
+            "question": "Xếp loại của tiêu chí Tiến độ công việc là gì?",
+            "options": [
+                "Tốt",
+                "Khá",
+                "Trung bình",
+                "Giỏi"
+            ],
+            "answer": "Khá"
+        },
+        {
+            "question": "Điểm tổng kết của sinh viên là bao nhiêu?",
+            "options": [
+                "6.5",
+                "7.0",
+                "7.5",
+                "6.9"
+            ],
+            "answer": "6.9"
+        },
+        {
+            "question": "Xếp loại chung của sinh viên là gì?",
+            "options": [
+                "Giỏi",
+                "Khá",
+                "Trung bình",
+                "Xuất sắc"
+            ],
+            "answer": "Khá"
+        },
+        {
+            "question": "Ưu điểm của sinh viên được ghi nhận là gì?",
+            "options": [
+                "Kiến thức chuyên môn tốt",
+                "Có ý thức kỷ luật tốt",
+                "Kỹ năng code sạch",
+                "Chủ động trong công việc"
+            ],
+            "answer": "Có ý thức kỷ luật tốt"
+        },
+        {
+            "question": "Hạn chế cần khắc phục của sinh viên liên quan đến vấn đề gì?",
+            "options": [
+                "Giờ giấc",
+                "Kỹ năng giao tiếp",
+                "Kiến thức chuyên môn",
+                "Tiến độ công việc"
+            ],
+            "answer": "Kiến thức chuyên môn"
+        },
+        {
+            "question": "Các ngôn ngữ chuyên môn được nhắc đến trong phiếu đánh giá là gì?",
+            "options": [
+                "Java, Python",
+                "PHP, JS, Database",
+                "C++, C#",
+                "HTML, CSS"
+            ],
+            "answer": "PHP, JS, Database"
+        },
+        {
+            "question": "Sinh viên cần trau dồi kiến thức để làm gì?",
+            "options": [
+                "Đáp ứng yêu cầu dự án phức tạp",
+                "Giao tiếp với khách hàng",
+                "Nâng cao kỹ năng làm việc nhóm",
+                "Tốt nghiệp đúng hạn"
+            ],
+            "answer": "Đáp ứng yêu cầu dự án phức tạp"
+        },
+        {
+            "question": "Ai là người xác nhận phiếu đánh giá này?",
+            "options": [
+                "Sinh viên",
+                "Cán bộ hướng dẫn",
+                "CÔNG TY TNHH DAK SYSTEM",
+                "Trường Cao Đẳng"
+            ],
+            "answer": "CÔNG TY TNHH DAK SYSTEM"
+        }
+    ]
+}

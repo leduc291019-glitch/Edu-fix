@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGame-AI - Đấu Trường Tri Thức</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <style>
+        /* CSS Đặc thù cho cơ chế vận hành Trò chơi */
+        .game-wrapper {
+            max-width: 800px;
+            margin: 60px auto;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .game-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .progress-container {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            height: 12px;
+            width: 100%;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .progress-bar {
+            background: #FFFFFF;
+            height: 100%;
+            width: 0%;
+            /* Sẽ tăng dần bằng JS */
+            transition: width 0.4s ease;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Đồng hồ đếm ngược */
+        .timer-box {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Hộp hiển thị câu hỏi */
+        .question-card {
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .question-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        /* Bố cục danh sách các đáp án lựa chọn */
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .option-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px 24px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .option-card:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            border-color: #FFFFFF;
+        }
+
+        .option-prefix {
+            background: rgba(255, 255, 255, 0.2);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        /* Màn hình hiển thị kết quả (Ẩn mặc định) */
+        .result-card {
+            text-align: center;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .result-icon {
+            font-size: 4.5rem;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="padding: 20px 0 0 20px;">
+        <a href="./dashboard.html" class="btn-action"
+            style="background: rgba(0,0,0,0.15); color: #FFF; border: 1px solid var(--border-color)">
+            <i class="fa-solid fa-arrow-left"></i> Trở về Dashboard
+        </a>
+    </div>
+
+    <div class="game-wrapper">
+
+        <div id="game-play-zone">
+            <div class="game-header">
+                <div>
+                    <span id="current-question-index" style="font-weight: 700; font-size: 1.1rem;">Câu hỏi: 1/20</span>
+                </div>
+                <div class="timer-box">
+                    <i class="fa-solid fa-stopwatch fa-spin"></i>
+                    <span id="timer-count">15s</span>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="game-progress"></div>
+            </div>
+
+            <div class="core-card question-card">
+                <p class="question-text" id="question-display">Đang nạp bộ câu hỏi từ trí tuệ nhân tạo AI...</p>
+            </div>
+
+            <div class="options-grid" id="options-display">
+            </div>
+        </div>
+
+        <div class="core-card result-card" id="game-result-zone">
+            <div class="result-icon"><i class="fa-solid fa-trophy"></i></div>
+            <h2>Hoàn Thành Thử Thách!</h2>
+            <p style="font-size: 1.2rem; color: var(--text-muted);">Bạn đã xuất sắc vượt qua các câu hỏi trích xuất từ
+                tài liệu.</p>
+
+            <div style="margin: 15px 0; font-size: 1.6rem; font-weight: 800;">
+                Số câu đúng: <span id="correct-count">0</span>/<span id="total-count">0</span>
+            </div>
+
+            <div style="display: flex; gap: 15px; margin-top: 10px;">
+                <button class="btn-primary" onclick="location.reload()"><i class="fa-solid fa-rotate-right"></i> Chơi
+                    lại</button>
+                <a href="./dashboard.html" class="btn-action"
+                    style="background: rgba(255,255,255,0.2); color: #fff; border: 1px solid var(--border-color); padding: 12px 20px; border-radius: 8px;">Tiếp
+                    tục học tập</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            function normalizeQuestions(payload) {
+                const flattenQuestions = (input) => {
+                    if (!input) {
+                        return [];
+                    }
+
+                    if (Array.isArray(input)) {
+                        return input;
+                    }
+
+                    if (input && Array.isArray(input.questions)) {
+                        return input.questions;
+                    }
+
+                    return [];
+                };
+
+                return flattenQuestions(payload)
+                    .map((question, index) => {
+                        const options = Array.isArray(question?.options)
+                            ? question.options.filter(Boolean).map((opt) => String(opt).trim()).slice(0, 4)
+                            : [];
+
+                        let answerIndex = null;
+
+                        if (typeof question?.answer === 'number' && Number.isInteger(question.answer) && question.answer >= 0 && question.answer < options.length) {
+                            answerIndex = question.answer;
+                        } else if (typeof question?.answer === 'string') {
+                            const normalizedAnswer = question.answer.trim().toUpperCase();
+
+                            if (/^[A-D]$/.test(normalizedAnswer)) {
+                                answerIndex = normalizedAnswer.charCodeAt(0) - 65;
+                            } else {
+                                const matchedIndex = options.findIndex((opt) => opt.toLowerCase() === normalizedAnswer.toLowerCase());
+                                if (matchedIndex >= 0) {
+                                    answerIndex = matchedIndex;
+                                }
+                            }
+                        }
+
+                        if (answerIndex === null && options.length > 0) {
+                            answerIndex = 0;
+                        }
+
+                        return {
+                            ...question,
+                            question: String(question?.question || '').trim(),
+                            options,
+                            answer: answerIndex,
+                            id: question?.id ?? index + 1
+                        };
+                    })
+                    .filter((question) => question && question.question);
+            }
+
+            const qIndexLabel = document.getElementById('current-question-index');
+            const qDisplay = document.getElementById('question-display');
+            const oDisplay = document.getElementById('options-display');
+            const progressBar = document.getElementById('game-progress');
+            const timerLabel = document.getElementById('timer-count');
+
+            const sessionData = sessionStorage.getItem('current_game_questions');
+            const parsedSession = sessionData ? JSON.parse(sessionData) : null;
+            const questions = normalizeQuestions(parsedSession).slice(0, 20);
+
+            if (!questions.length) {
+                qIndexLabel.textContent = 'Câu hỏi: 0/0';
+                qDisplay.textContent = 'Không có bộ câu hỏi nào được truyền từ dashboard. Hãy quay lại và tạo lại từ tài liệu.';
+                oDisplay.innerHTML = '<div class="option-card"><div>Vui lòng quay lại dashboard và tạo lại trò chơi.</div></div>';
+                progressBar.style.width = '0%';
+                return;
+            }
+
+            let currentIndex = 0;
+            let score = 0;
+            let timer;
+            let timeLeft = 15;
+
+            const playZone = document.getElementById('game-play-zone');
+            const resultZone = document.getElementById('game-result-zone');
+
+            // --- 1. KHỞI CHẠY CÂU HỎI ---
+            function loadQuestion() {
+                if (currentIndex >= questions.length) {
+                    endGame();
+                    return;
+                }
+
+                // Reset đồng hồ đếm ngược cho mỗi câu
+                clearInterval(timer);
+                timeLeft = 15;
+                timerLabel.textContent = `${timeLeft}s`;
+                startTimer();
+
+                // Cập nhật tiến độ
+                const currentQ = questions[currentIndex];
+                const totalQuestions = questions.length || 1;
+                qIndexLabel.textContent = `Câu hỏi: ${currentIndex + 1}/${totalQuestions}`;
+                qDisplay.textContent = currentQ.question;
+
+                // Tính toán phần trăm thanh Progress
+                const progressPercent = ((currentIndex) / totalQuestions) * 100;
+                progressBar.style.width = `${progressPercent}%`;
+
+                // Xuất danh sách đáp án
+                const prefixes = ['A', 'B', 'C', 'D'];
+                oDisplay.innerHTML = currentQ.options.map((opt, index) => `
+                    <div class="option-card" data-index="${index}">
+                        <div class="option-prefix">${prefixes[index]}</div>
+                        <div>${opt}</div>
+                    </div>
+                `).join('');
+
+                // Gắn sự kiện click lựa chọn đáp án
+                document.querySelectorAll('.option-card').forEach(card => {
+                    card.addEventListener('click', (e) => {
+                        const selectedIdx = parseInt(e.currentTarget.getAttribute('data-index'));
+                        checkAnswer(selectedIdx);
+                    });
+                });
+            }
+
+            // --- 2. BỘ ĐẾM THỜI GIAN ---
+            function startTimer() {
+                timer = setInterval(() => {
+                    timeLeft--;
+                    timerLabel.textContent = `${timeLeft}s`;
+                    if (timeLeft <= 0) {
+                        clearInterval(timer);
+                        // Hết giờ tự động chuyển câu tiếp theo
+                        currentIndex++;
+                        loadQuestion();
+                    }
+                }, 1000);
+            }
+
+            // --- 3. KIỂM TRA ĐÁP ÁN ---
+            function checkAnswer(selectedIdx) {
+                clearInterval(timer);
+                const currentQ = questions[currentIndex];
+                const correctAnswerLabel = currentQ.options[currentQ.answer] || 'Không xác định';
+
+                if (selectedIdx === currentQ.answer) {
+                    score++;
+                    oDisplay.innerHTML = `
+                        <div class="option-card" style="background: rgba(46, 204, 113, 0.2); border-color: #2ecc71;">
+                            <div class="option-prefix">✓</div>
+                            <div>Chính xác! Bạn làm rất tốt. 🎉</div>
+                        </div>
+                    `;
+                } else {
+                    oDisplay.innerHTML = `
+                        <div class="option-card" style="background: rgba(231, 76, 60, 0.2); border-color: #e74c3c;">
+                            <div class="option-prefix">✕</div>
+                            <div>Đáp án đúng là: ${correctAnswerLabel}</div>
+                        </div>
+                    `;
+                }
+
+                currentIndex++;
+                setTimeout(loadQuestion, 1200);
+            }
+
+            // --- 4. KẾT THÚC TRÒ CHƠI ---
+            function endGame() {
+                progressBar.style.width = `100%`;
+                playZone.style.display = 'none';
+                resultZone.style.display = 'flex';
+
+                document.getElementById('correct-count').textContent = score;
+                document.getElementById('total-count').textContent = questions.length || 0;
+
+                // Xóa bộ nhớ câu hỏi tạm sau khi hoàn tất
+                sessionStorage.removeItem('current_game_questions');
+            }
+
+            // Kích hoạt nạp câu hỏi đầu tiên
+            loadQuestion();
+        });
+    </script>
+</body>
+
+</html>

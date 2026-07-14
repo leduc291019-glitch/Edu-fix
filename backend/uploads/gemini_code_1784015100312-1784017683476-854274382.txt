@@ -1,0 +1,256 @@
+Bạn là một chuyên gia giáo dục và thiết kế trò chơi học tập.
+Hãy phân tích nội dung tài liệu dưới đây và tạo ra một trò chơi trắc nghiệm gồm ĐÚNG 20 CÂU HỎI dựa trên những thông tin quan trọng nhất của tài liệu.
+
+YÊU CẦU:
+1. Số lượng: Đúng 20 câu hỏi.
+2. Mức độ: Đa dạng từ dễ đến khó.
+3. Định dạng: Trả về kết quả hoàn toàn bằng định dạng JSON theo cấu trúc sau, không kèm theo bất kỳ văn bản nào khác ngoài JSON:
+
+{
+"gameTitle": "Trắc Nghiệm Kiến Trúc Hệ Thống",
+"questions": [
+{
+"id": 1,
+"question": "Mục tiêu chính của tài liệu Kiến trúc hệ thống là gì?",
+"options": [
+"Lên kế hoạch marketing",
+"Đồng bộ hóa thông tin giữa các bên trước khi viết code",
+"Hướng dẫn sử dụng phần mềm",
+"Báo cáo tài chính dự án"
+],
+"correctAnswer": "Đồng bộ hóa thông tin giữa các bên trước khi viết code",
+"explanation": "Tài liệu nhằm đồng bộ hóa thông tin giữa các nhà phát triển, quản lý dự án và các bên liên quan trước khi tiến hành viết code cho các mô-đun cốt lõi."
+},
+{
+"id": 2,
+"question": "Công nghệ nào sau đây KHÔNG được sử dụng cho lớp Giao diện (Frontend)?",
+"options": [
+"Next.js",
+"React JS",
+"Node.js",
+"Tailwind CSS"
+],
+"correctAnswer": "Node.js",
+"explanation": "Node.js được sử dụng cho phân lớp Máy chủ (Backend), không phải Frontend."
+},
+{
+"id": 3,
+"question": "Trong hệ thống, lớp Frontend đảm nhận vai trò gì?",
+"options": [
+"Xử lý logic nghiệp vụ",
+"Quản lý quyền truy cập",
+"Thiết kế lược đồ dữ liệu",
+"Xây dựng layout hiển thị và tối ưu hóa SEO"
+],
+"correctAnswer": "Xây dựng layout hiển thị và tối ưu hóa SEO",
+"explanation": "Giao diện (Frontend) dùng để xây dựng layout hiển thị, quản lý luồng dữ liệu UI, tối ưu hóa SEO và Server-Side Rendering (SSR)."
+},
+{
+"id": 4,
+"question": "Công nghệ nào được đề xuất sử dụng cho lớp Máy chủ (Backend)?",
+"options": [
+"Node.js / PHP",
+"React JS",
+"MySQL",
+"Prisma ORM"
+],
+"correctAnswer": "Node.js / PHP",
+"explanation": "Tài liệu chỉ định công nghệ lựa chọn cho Máy chủ (Backend) là Node.js / PHP."
+},
+{
+"id": 5,
+"question": "Nhiệm vụ chính của lớp Backend trong dự án này là gì?",
+"options": [
+"Tối ưu hóa Server-Side Rendering",
+"Xử lý logic nghiệp vụ và cung cấp API",
+"Quản lý schema migration",
+"Thiết kế giao diện người dùng"
+],
+"correctAnswer": "Xử lý logic nghiệp vụ và cung cấp API",
+"explanation": "Vai trò của Backend là xử lý logic nghiệp vụ, quản lý quyền truy cập và cung cấp hệ thống API."
+},
+{
+"id": 6,
+"question": "Hệ quản trị cơ sở dữ liệu nào được sử dụng để lưu trữ?",
+"options": [
+"MongoDB",
+"PostgreSQL",
+"MySQL",
+"SQL Server"
+],
+"correctAnswer": "MySQL",
+"explanation": "Tài liệu nêu rõ việc sử dụng MySQL và Prisma ORM cho phân lớp Lưu trữ (Database)."
+},
+{
+"id": 7,
+"question": "Các bảng chính trong cơ sở dữ liệu được chuẩn hóa ở mức nào?",
+"options": [
+"1NF",
+"2NF",
+"3NF",
+"BCNF"
+],
+"correctAnswer": "3NF",
+"explanation": "Các bảng chính được chuẩn hóa ở mức 3NF để tránh dư thừa dữ liệu."
+},
+{
+"id": 8,
+"question": "Mục đích của việc chuẩn hóa cơ sở dữ liệu ở mức 3NF là gì?",
+"options": [
+"Tăng tốc độ tải trang",
+"Tránh dư thừa dữ liệu",
+"Làm đẹp mã nguồn",
+"Hỗ trợ Server-Side Rendering"
+],
+"correctAnswer": "Tránh dư thừa dữ liệu",
+"explanation": "Các bảng chính được chuẩn hóa ở mức 3NF nhằm mục đích tránh dư thừa dữ liệu."
+},
+{
+"id": 9,
+"question": "Công cụ nào đóng vai trò cầu nối giữa mã nguồn ứng dụng và cơ sở dữ liệu MySQL?",
+"options": [
+"Tailwind CSS",
+"Next.js",
+"Prisma ORM",
+"PHP"
+],
+"correctAnswer": "Prisma ORM",
+"explanation": "Việc sử dụng Prisma ORM đóng vai trò cầu nối vững chắc giữa mã nguồn ứng dụng và cơ sở dữ liệu MySQL."
+},
+{
+"id": 10,
+"question": "Một trong những lợi ích của Prisma ORM là giảm thiểu rủi ro lỗi cú pháp SQL nhờ vào điều gì?",
+"options": [
+"Type-Safe queries",
+"Server-Side Rendering",
+"Bộ lọc động",
+"RESTful API"
+],
+"correctAnswer": "Type-Safe queries",
+"explanation": "Prisma ORM giúp giảm thiểu rủi ro lỗi cú pháp SQL thông qua Type-Safe queries."
+},
+{
+"id": 11,
+"question": "Prisma ORM giúp quản lý điều gì một cách tự động và rõ ràng qua từng phiên bản?",
+"options": [
+"Giao diện UI",
+"Schema migration",
+"Bảo mật Frontend",
+"Bộ lọc tìm kiếm"
+],
+"correctAnswer": "Schema migration",
+"explanation": "Prisma ORM mang lại lợi ích trong việc quản lý schema migration tự động và rõ ràng qua từng phiên bản."
+},
+{
+"id": 12,
+"question": "Sử dụng Prisma ORM giúp tăng tốc độ phát triển cho mô-đun nào?",
+"options": [
+"Mô-đun giao diện",
+"Mô-đun tương tác dữ liệu (CRUD)",
+"Mô-đun định tuyến (Routing)",
+"Mô-đun SEO"
+],
+"correctAnswer": "Mô-đun tương tác dữ liệu (CRUD)",
+"explanation": "Prisma ORM giúp tăng tốc độ phát triển mô-đun tương tác dữ liệu (CRUD)."
+},
+{
+"id": 13,
+"question": "Khi cần khởi tạo hoặc cập nhật Database, nhà phát triển nên làm gì?",
+"options": [
+"Chỉnh sửa cấu trúc bảng trực tiếp trên server",
+"Sử dụng các tập lệnh migration chuẩn",
+"Xóa cơ sở dữ liệu và tạo lại",
+"Thay đổi trực tiếp trên giao diện UI"
+],
+"correctAnswer": "Sử dụng các tập lệnh migration chuẩn",
+"explanation": "Ghi chú tích hợp yêu cầu luôn sử dụng các tập lệnh migration chuẩn khi cần khởi tạo hoặc cập nhật Database."
+},
+{
+"id": 14,
+"question": "Hành động nào KHÔNG được khuyến khích khi cập nhật cơ sở dữ liệu trong dự án này?",
+"options": [
+"Sử dụng Prisma ORM",
+"Chuẩn hóa bảng ở mức 3NF",
+"Chỉnh sửa cấu trúc bảng trực tiếp trên database server",
+"Dùng tập lệnh migration chuẩn"
+],
+"correctAnswer": "Chỉnh sửa cấu trúc bảng trực tiếp trên database server",
+"explanation": "Tài liệu lưu ý sử dụng migration chuẩn thay vì chỉnh sửa cấu trúc bảng trực tiếp trên database server."
+},
+{
+"id": 15,
+"question": "Cấu trúc hệ thống cơ sở dữ liệu được thiết kế nhằm tối ưu hóa đặc biệt cho chức năng nào?",
+"options": [
+"Bảng biểu, bộ lọc động và xuất báo cáo",
+"Chơi game trực tuyến",
+"Xử lý hình ảnh 3D",
+"Gửi email tự động"
+],
+"correctAnswer": "Bảng biểu, bộ lọc động và xuất báo cáo",
+"explanation": "Sơ đồ cơ sở dữ liệu được thiết kế nhằm tối ưu hóa cho các chức năng bảng biểu, bộ lọc động và hỗ trợ xuất báo cáo."
+},
+{
+"id": 16,
+"question": "Tài liệu này thuộc loại tài liệu nào?",
+"options": [
+"Hướng dẫn sử dụng",
+"Hợp đồng kinh tế",
+"Tài liệu Nội bộ",
+"Thông cáo báo chí"
+],
+"correctAnswer": "Tài liệu Nội bộ",
+"explanation": "Phần thông tin bổ sung của tài liệu ghi rõ đây là 'Tài liệu Nội bộ'."
+},
+{
+"id": 17,
+"question": "Từ viết tắt SSR trong phần mô tả Frontend có nghĩa là gì?",
+"options": [
+"Solid State Rendering",
+"Secure Socket Request",
+"Server-Side Rendering",
+"System Security Rules"
+],
+"correctAnswer": "Server-Side Rendering",
+"explanation": "Phân lớp Frontend tối ưu hóa SEO và Server-Side Rendering (SSR)."
+},
+{
+"id": 18,
+"question": "Cấu trúc kiến trúc phần mềm trong tài liệu giúp hệ thống đảm bảo điều gì trong tương lai?",
+"options": [
+"Tính mở rộng, hiệu suất cao và khả năng bảo trì",
+"Không bao giờ phát sinh lỗi",
+"Chạy được trên mọi hệ điều hành cũ",
+"Giảm 100% chi phí server"
+],
+"correctAnswer": "Tính mở rộng, hiệu suất cao và khả năng bảo trì",
+"explanation": "Cấu trúc này giúp đảm bảo tính mở rộng, hiệu suất cao và khả năng bảo trì trong tương lai."
+},
+{
+"id": 19,
+"question": "Phân lớp nào đảm bảo tính toàn vẹn dữ liệu và hỗ trợ truy vấn phức tạp an toàn?",
+"options": [
+"Next.js",
+"Lưu trữ (Database)",
+"Giao diện (Frontend)",
+"Máy chủ (Backend)"
+],
+"correctAnswer": "Lưu trữ (Database)",
+"explanation": "Lưu trữ (Database) có vai trò thiết kế lược đồ dữ liệu quan hệ, đảm bảo tính toàn vẹn dữ liệu và hỗ trợ truy vấn phức tạp an toàn."
+},
+{
+"id": 20,
+"question": "Theo tài liệu, đâu là công nghệ thuộc nhóm Frontend giúp xây dựng giao diện hiển thị?",
+"options": [
+"Node.js",
+"MySQL",
+"Prisma",
+"Tailwind CSS"
+],
+"correctAnswer": "Tailwind CSS",
+"explanation": "Tailwind CSS nằm trong ngăn xếp công nghệ Giao diện (Frontend) dùng để xây dựng layout hiển thị."
+}
+]
+}
+
+NỘI DUNG TÀI LIỆU CẦN PHÂN TÍCH:
+[Chèn nội dung văn bản được trích xuất từ Bước 1 vào đây]
